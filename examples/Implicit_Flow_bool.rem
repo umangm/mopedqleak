@@ -1,0 +1,400 @@
+//O = 0;
+//if (S == 0) then O = 0
+//else if (S == 1) then O = 1
+//else if (S == 2) then O = 2
+//else if (S == 3) then O = 3
+//else if (S == 4) then O = 4
+//else if (S == 5) then O = 5
+//else if (S == 6) then O = 6
+//else O = 0;
+
+//************Min-Entropy************
+
+//Termination after 3 iterations.
+//MinEntropy = 2.80735
+//190.1380372 milliseconds elapsed
+
+//(202.666016+181.332031+181.513916+186.847900+184.840088)/5=187.4399902
+
+//************************************
+
+//************Shannon-Entropy************
+
+//Termination after 3 iterations.
+//Shannon Entropy = 4.67189e-08
+//8.325976 milliseconds elapsed
+
+// (186.956055+185.260986+189.435059+185.267090+203.770996)=190.1380372
+
+//************************************
+
+
+//Moped constraint
+bool S[32], O[32];
+
+module void main(){
+ O[0] =false;
+  O[1] =false;
+  O[2] =false;
+  O[3] =false;
+  O[4] =false;
+  O[5] =false;
+  O[6] =false;
+  O[7] =false;
+  O[8] =false;
+  O[9] =false;
+  O[10] =false;
+  O[11] =false;
+  O[12] =false;
+  O[13] =false;
+  O[14] =false;
+  O[15] =false;
+  O[16] =false;
+  O[17] =false;
+  O[18] =false;
+  O[19] =false;
+  O[20] =false;
+  O[21] =false;
+  O[22] =false;
+  O[23] =false;
+  O[24] =false;
+  O[25] =false;
+  O[26] =false;
+  O[27] =false;
+  O[28] =false;
+  O[29] =false;
+  O[30] =false;
+  O[31] =false;
+
+
+	if
+	::	((S[0]==false) && (S[1]==false) && (S[2]==false) && (S[3]==false) && (S[4]==false) && (S[5]==false) && (S[6]==false) && (S[7]==false) && (S[8]==false) && (S[9]==false) && (S[10]==false) && (S[11]==false) && (S[12]==false) && (S[13]==false) && (S[14]==false) && (S[15]==false) && (S[16]==false) && (S[17]==false) && (S[18]==false) && (S[19]==false) && (S[20]==false) && (S[21]==false) && (S[22]==false) && (S[23]==false) && (S[24]==false) && (S[25]==false) && (S[26]==false) && (S[27]==false) && (S[28]==false) && (S[29]==false) && (S[30]==false) && (S[31]==false)) ->  
+  O[0] =false;
+  O[1] =false;
+  O[2] =false;
+  O[3] =false;
+  O[4] =false;
+  O[5] =false;
+  O[6] =false;
+  O[7] =false;
+  O[8] =false;
+  O[9] =false;
+  O[10] =false;
+  O[11] =false;
+  O[12] =false;
+  O[13] =false;
+  O[14] =false;
+  O[15] =false;
+  O[16] =false;
+  O[17] =false;
+  O[18] =false;
+  O[19] =false;
+  O[20] =false;
+  O[21] =false;
+  O[22] =false;
+  O[23] =false;
+  O[24] =false;
+  O[25] =false;
+  O[26] =false;
+  O[27] =false;
+  O[28] =false;
+  O[29] =false;
+  O[30] =false;
+  O[31] =false;
+
+	::	else ->
+			if
+			::	(S[0]==true) && (S[1]==false) && (S[2]==false) && (S[3]==false) && (S[4]==false) && (S[5]==false) && (S[6]==false) && (S[7]==false) && (S[8]==false) && (S[9]==false) && (S[10]==false) && (S[11]==false) && (S[12]==false) && (S[13]==false) && (S[14]==false) && (S[15]==false) && (S[16]==false) && (S[17]==false) && (S[18]==false) && (S[19]==false) && (S[20]==false) && (S[21]==false) && (S[22]==false) && (S[23]==false) && (S[24]==false) && (S[25]==false) && (S[26]==false) && (S[27]==false) && (S[28]==false) && (S[29]==false) && (S[30]==false) && (S[31]==false) -> 
+  O[0] =true;
+  O[1] =false;
+  O[2] =false;
+  O[3] =false;
+  O[4] =false;
+  O[5] =false;
+  O[6] =false;
+  O[7] =false;
+  O[8] =false;
+  O[9] =false;
+  O[10] =false;
+  O[11] =false;
+  O[12] =false;
+  O[13] =false;
+  O[14] =false;
+  O[15] =false;
+  O[16] =false;
+  O[17] =false;
+  O[18] =false;
+  O[19] =false;
+  O[20] =false;
+  O[21] =false;
+  O[22] =false;
+  O[23] =false;
+  O[24] =false;
+  O[25] =false;
+  O[26] =false;
+  O[27] =false;
+  O[28] =false;
+  O[29] =false;
+  O[30] =false;
+  O[31] =false;
+
+ 
+			::	else ->
+					if
+					::	(S[0]==false) && (S[1]==true) && (S[2]==false) && (S[3]==false) && (S[4]==false) && (S[5]==false) && (S[6]==false) && (S[7]==false) && (S[8]==false) && (S[9]==false) && (S[10]==false) && (S[11]==false) && (S[12]==false) && (S[13]==false) && (S[14]==false) && (S[15]==false) && (S[16]==false) && (S[17]==false) && (S[18]==false) && (S[19]==false) && (S[20]==false) && (S[21]==false) && (S[22]==false) && (S[23]==false) && (S[24]==false) && (S[25]==false) && (S[26]==false) && (S[27]==false) && (S[28]==false) && (S[29]==false) && (S[30]==false) && (S[31]==false) -> 
+  O[0] =false;
+  O[1] =true;
+  O[2] =false;
+  O[3] =false;
+  O[4] =false;
+  O[5] =false;
+  O[6] =false;
+  O[7] =false;
+  O[8] =false;
+  O[9] =false;
+  O[10] =false;
+  O[11] =false;
+  O[12] =false;
+  O[13] =false;
+  O[14] =false;
+  O[15] =false;
+  O[16] =false;
+  O[17] =false;
+  O[18] =false;
+  O[19] =false;
+  O[20] =false;
+  O[21] =false;
+  O[22] =false;
+  O[23] =false;
+  O[24] =false;
+  O[25] =false;
+  O[26] =false;
+  O[27] =false;
+  O[28] =false;
+  O[29] =false;
+  O[30] =false;
+  O[31] =false;
+
+					::	else ->
+							if
+							::	(S[0]==true) && (S[1]==true) && (S[2]==false) && (S[3]==false) && (S[4]==false) && (S[5]==false) && (S[6]==false) && (S[7]==false) && (S[8]==false) && (S[9]==false) && (S[10]==false) && (S[11]==false) && (S[12]==false) && (S[13]==false) && (S[14]==false) && (S[15]==false) && (S[16]==false) && (S[17]==false) && (S[18]==false) && (S[19]==false) && (S[20]==false) && (S[21]==false) && (S[22]==false) && (S[23]==false) && (S[24]==false) && (S[25]==false) && (S[26]==false) && (S[27]==false) && (S[28]==false) && (S[29]==false) && (S[30]==false) && (S[31]==false) -> 
+  O[0] =true; O[1] =true;
+  O[2] =false;
+  O[3] =false;
+  O[4] =false;
+  O[5] =false;
+  O[6] =false;
+  O[7] =false;
+  O[8] =false;
+  O[9] =false;
+  O[10] =false;
+  O[11] =false;
+  O[12] =false;
+  O[13] =false;
+  O[14] =false;
+  O[15] =false;
+  O[16] =false;
+  O[17] =false;
+  O[18] =false;
+  O[19] =false;
+  O[20] =false;
+  O[21] =false;
+  O[22] =false;
+  O[23] =false;
+  O[24] =false;
+  O[25] =false;
+  O[26] =false;
+  O[27] =false;
+  O[28] =false;
+  O[29] =false;
+  O[30] =false;
+  O[31] =false;
+
+							::	else ->
+									if
+									::	(S[0]==false) && (S[1]==false) && (S[2]==true) && (S[3]==false) && (S[4]==false) && (S[5]==false) && (S[6]==false) && (S[7]==false) && (S[8]==false) && (S[9]==false) && (S[10]==false) && (S[11]==false) && (S[12]==false) && (S[13]==false) && (S[14]==false) && (S[15]==false) && (S[16]==false) && (S[17]==false) && (S[18]==false) && (S[19]==false) && (S[20]==false) && (S[21]==false) && (S[22]==false) && (S[23]==false) && (S[24]==false) && (S[25]==false) && (S[26]==false) && (S[27]==false) && (S[28]==false) && (S[29]==false) && (S[30]==false) && (S[31]==false) -> 
+O[0] =false;
+  O[1] =false;
+  O[2] =true;
+  O[3] =false;
+  O[4] =false;
+  O[5] =false;
+  O[6] =false;
+  O[7] =false;
+  O[8] =false;
+  O[9] =false;
+  O[10] =false;
+  O[11] =false;
+  O[12] =false;
+  O[13] =false;
+  O[14] =false;
+  O[15] =false;
+  O[16] =false;
+  O[17] =false;
+  O[18] =false;
+  O[19] =false;
+  O[20] =false;
+  O[21] =false;
+  O[22] =false;
+  O[23] =false;
+  O[24] =false;
+  O[25] =false;
+  O[26] =false;
+  O[27] =false;
+  O[28] =false;
+  O[29] =false;
+  O[30] =false;
+  O[31] =false;
+
+									::	else ->
+											if
+											::	(S[0]==true) && (S[1]==false) && (S[2]==false) && (S[3]==true) && (S[4]==false) && (S[5]==false) && (S[6]==false) && (S[7]==false) && (S[8]==false) && (S[9]==false) && (S[10]==false) && (S[11]==false) && (S[12]==false) && (S[13]==false) && (S[14]==false) && (S[15]==false) && (S[16]==false) && (S[17]==false) && (S[18]==false) && (S[19]==false) && (S[20]==false) && (S[21]==false) && (S[22]==false) && (S[23]==false) && (S[24]==false) && (S[25]==false) && (S[26]==false) && (S[27]==false) && (S[28]==false) && (S[29]==false) && (S[30]==false) && (S[31]==false)-> 
+  O[0] =true;
+  O[1] =false;
+  O[2] =true;
+  O[3] =false;
+  O[4] =false;
+  O[5] =false;
+  O[6] =false;
+  O[7] =false;
+  O[8] =false;
+  O[9] =false;
+  O[10] =false;
+  O[11] =false;
+  O[12] =false;
+  O[13] =false;
+  O[14] =false;
+  O[15] =false;
+  O[16] =false;
+  O[17] =false;
+  O[18] =false;
+  O[19] =false;
+  O[20] =false;
+  O[21] =false;
+  O[22] =false;
+  O[23] =false;
+  O[24] =false;
+  O[25] =false;
+  O[26] =false;
+  O[27] =false;
+  O[28] =false;
+  O[29] =false;
+  O[30] =false;
+  O[31] =false;
+
+											::	else ->
+													if
+													::	(S[0]==false) && (S[1]==true) && (S[2]==true) && (S[3]==false) && (S[4]==false) && (S[5]==false) && (S[6]==false) && (S[7]==false) && (S[8]==false) && (S[9]==false) && (S[10]==false) && (S[11]==false) && (S[12]==false) && (S[13]==false) && (S[14]==false) && (S[15]==false) && (S[16]==false) && (S[17]==false) && (S[18]==false) && (S[19]==false) && (S[20]==false) && (S[21]==false) && (S[22]==false) && (S[23]==false) && (S[24]==false) && (S[25]==false) && (S[26]==false) && (S[27]==false) && (S[28]==false) && (S[29]==false) && (S[30]==false) && (S[31]==false) -> 
+  O[0] =false;
+  O[1] =true;
+  O[2] =true;
+  O[3] =false;
+  O[4] =false;
+  O[5] =false;
+  O[6] =false;
+  O[7] =false;
+  O[8] =false;
+  O[9] =false;
+  O[10] =false;
+  O[11] =false;
+  O[12] =false;
+  O[13] =false;
+  O[14] =false;
+  O[15] =false;
+  O[16] =false;
+  O[17] =false;
+  O[18] =false;
+  O[19] =false;
+  O[20] =false;
+  O[21] =false;
+  O[22] =false;
+  O[23] =false;
+  O[24] =false;
+  O[25] =false;
+  O[26] =false;
+  O[27] =false;
+  O[28] =false;
+  O[29] =false;
+  O[30] =false;
+  O[31] =false;
+
+													::	else -> O[0] =false;
+  O[1] =false;
+  O[2] =false;
+  O[3] =false;
+  O[4] =false;
+  O[5] =false;
+  O[6] =false;
+  O[7] =false;
+  O[8] =false;
+  O[9] =false;
+  O[10] =false;
+  O[11] =false;
+  O[12] =false;
+  O[13] =false;
+  O[14] =false;
+  O[15] =false;
+  O[16] =false;
+  O[17] =false;
+  O[18] =false;
+  O[19] =false;
+  O[20] =false;
+  O[21] =false;
+  O[22] =false;
+  O[23] =false;
+  O[24] =false;
+  O[25] =false;
+  O[26] =false;
+  O[27] =false;
+  O[28] =false;
+  O[29] =false;
+  O[30] =false;
+  O[31] =false;
+
+													fi
+											fi
+									fi
+							fi
+					fi
+			fi
+	fi
+
+S[0] =false;
+S[1] =false;
+S[2] =false;
+S[3] =false;
+S[4] =false;
+S[5] =false;
+S[6] =false;
+S[7] =false;
+S[8] =false;
+S[9] =false;
+S[10] =false;
+S[11] =false;
+S[12] =false;
+S[13] =false;
+S[14] =false;
+S[15] =false;
+S[16] =false;
+S[17] =false;
+S[18] =false;
+S[19] =false;
+S[20] =false;
+S[21] =false;
+S[22] =false;
+S[23] =false;
+S[24] =false;
+S[25] =false;
+S[26] =false;
+S[27] =false;
+S[28] =false;
+S[29] =false;
+S[30] =false;
+S[31] =false;
+	
+
+
+
+
+}
+

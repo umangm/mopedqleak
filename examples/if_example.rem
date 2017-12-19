@@ -1,0 +1,32 @@
+//*********** Modified 'if' statement *********************
+
+//This example illustrates the modified 'if' construct
+
+//*********************************************************
+
+bool a[2];
+
+module void main(){
+	if
+	::  a[0]==true && a[1]==false -> a[1] = a[0];
+	::  else -> a[1] = ! a[0];
+	fi
+	
+	//All of the following give a syntax error in Moped-QLeak :
+    
+    //if
+	//::  a[0]==true && a[1]==false -> a[1] = a[0];
+	//::  a[0]==true || a[1]==false -> a[1] = ! a[0];
+	//::  else -> skip;
+	//fi
+	
+	//if
+	//::  a[0]==true && a[1]==false -> a[1] = a[0];
+	//fi
+	
+	//if
+	//::  else -> skip;
+	//fi
+}
+
+

@@ -1,0 +1,5437 @@
+//************Min-Entropy************
+
+//Termination after 3 iterations.
+//MinEntropy = 16
+// 9307.3520506 milliseconds elapsed
+
+//(9304.078125+9245.180908+9451.018066+ 9299.572021 +9236.911133)/5.0 = 9307.3520506
+
+//************************************
+
+//************Shannon-Entropy************
+
+//Termination after 3 iterations.
+//Shannon Entropy = 16
+//9287.4063962 milliseconds elapsed
+
+//(9156.69995 + 9491.729004 + 9374.020020 + 9183.676025+ 9230.906982 )/5 =  9287.4063962
+
+//************************************
+
+
+bool S0, O0, X0;
+bool S1, O1, X1;
+bool S2, O2, X2;
+bool S3, O3, X3;
+bool S4, O4, X4;
+bool S5, O5, X5;
+bool S6, O6, X6;
+bool S7, O7, X7;
+bool S8, O8, X8;
+bool S9, O9, X9;
+bool S10, O10, X10;
+bool S11, O11, X11;
+bool S12, O12, X12;
+bool S13, O13, X13;
+bool S14, O14, X14;
+bool S15, O15, X15;
+bool S16, O16, X16;
+bool S17, O17, X17;
+bool S18, O18, X18;
+bool S19, O19, X19;
+bool S20, O20, X20;
+bool S21, O21, X21;
+bool S22, O22, X22;
+bool S23, O23, X23;
+bool S24, O24, X24;
+bool S25, O25, X25;
+bool S26, O26, X26;
+bool S27, O27, X27;
+bool S28, O28, X28;
+bool S29, O29, X29;
+bool S30, O30, X30;
+bool S31, O31, X31;
+
+module void main(){
+
+	bool le;
+	bool done;
+	O0 = false;
+	O1 = false;
+	O2 = false;
+	O3 = false;
+	O4 = false;
+	O5 = false;
+	O6 = false;
+	O7 = false;
+	O8 = false;
+	O9 = false;
+	O10 = false;
+	O11 = false;
+	O12 = false;
+	O13 = false;
+	O14 = false;
+	O15 = false;
+	O16 = false;
+	O17 = false;
+	O18 = false;
+	O19 = false;
+	O20 = false;
+	O21 = false;
+	O22 = false;
+	O23 = false;
+	O24 = false;
+	O25 = false;
+	O26 = false;
+	O27 = false;
+	O28 = false;
+	O29 = false;
+	O30 = false;
+	O31 = false;
+
+	X0 = O0;
+	X1 = O1;
+	X2 = O2;
+	X3 = O3;
+	X4 = O4;
+	X5 = O5;
+	X6 = O6;
+	X7 = O7;
+	X8 = O8;
+	X9 = O9;
+	X10 = O10;
+	X11 = O11;
+	X12 = O12;
+	X13 = O13;
+	X14 = O14;
+	X15 = O15;
+	X16 = O16;
+	X17 = O17;
+	X18 = O18;
+	X19 = O19;
+	X20 = O20;
+	X21 = O21;
+	X22 = O22;
+	X23 = O23;
+	X24 = O24;
+	X25 = O25;
+	X26 = O26;
+	X27 = O27;
+	X28 = O28;
+	X29 = O29;
+	X30 = O30;
+	X31 = true;
+
+	le = true;
+	done = false;
+
+	if
+	::	!done && !X31 && S31 -> done = true ;
+	::	else ->
+		if
+		::	!done && X31 && !S31 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X30 && S30 -> done = true ;
+	::	else ->
+		if
+		::	!done && X30 && !S30 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X29 && S29 -> done = true ;
+	::	else ->
+		if
+		::	!done && X29 && !S29 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X28 && S28 -> done = true ;
+	::	else ->
+		if
+		::	!done && X28 && !S28 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X27 && S27 -> done = true ;
+	::	else ->
+		if
+		::	!done && X27 && !S27 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X26 && S26 -> done = true ;
+	::	else ->
+		if
+		::	!done && X26 && !S26 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X25 && S25 -> done = true ;
+	::	else ->
+		if
+		::	!done && X25 && !S25 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X24 && S24 -> done = true ;
+	::	else ->
+		if
+		::	!done && X24 && !S24 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X23 && S23 -> done = true ;
+	::	else ->
+		if
+		::	!done && X23 && !S23 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X22 && S22 -> done = true ;
+	::	else ->
+		if
+		::	!done && X22 && !S22 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X21 && S21 -> done = true ;
+	::	else ->
+		if
+		::	!done && X21 && !S21 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X20 && S20 -> done = true ;
+	::	else ->
+		if
+		::	!done && X20 && !S20 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X19 && S19 -> done = true ;
+	::	else ->
+		if
+		::	!done && X19 && !S19 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X18 && S18 -> done = true ;
+	::	else ->
+		if
+		::	!done && X18 && !S18 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X17 && S17 -> done = true ;
+	::	else ->
+		if
+		::	!done && X17 && !S17 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X16 && S16 -> done = true ;
+	::	else ->
+		if
+		::	!done && X16 && !S16 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X15 && S15 -> done = true ;
+	::	else ->
+		if
+		::	!done && X15 && !S15 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X14 && S14 -> done = true ;
+	::	else ->
+		if
+		::	!done && X14 && !S14 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X13 && S13 -> done = true ;
+	::	else ->
+		if
+		::	!done && X13 && !S13 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X12 && S12 -> done = true ;
+	::	else ->
+		if
+		::	!done && X12 && !S12 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X11 && S11 -> done = true ;
+	::	else ->
+		if
+		::	!done && X11 && !S11 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X10 && S10 -> done = true ;
+	::	else ->
+		if
+		::	!done && X10 && !S10 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X9 && S9 -> done = true ;
+	::	else ->
+		if
+		::	!done && X9 && !S9 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X8 && S8 -> done = true ;
+	::	else ->
+		if
+		::	!done && X8 && !S8 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X7 && S7 -> done = true ;
+	::	else ->
+		if
+		::	!done && X7 && !S7 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X6 && S6 -> done = true ;
+	::	else ->
+		if
+		::	!done && X6 && !S6 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X5 && S5 -> done = true ;
+	::	else ->
+		if
+		::	!done && X5 && !S5 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X4 && S4 -> done = true ;
+	::	else ->
+		if
+		::	!done && X4 && !S4 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X3 && S3 -> done = true ;
+	::	else ->
+		if
+		::	!done && X3 && !S3 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X2 && S2 -> done = true ;
+	::	else ->
+		if
+		::	!done && X2 && !S2 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X1 && S1 -> done = true ;
+	::	else ->
+		if
+		::	!done && X1 && !S1 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X0 && S0 -> done = true ;
+	::	else ->
+		if
+		::	!done && X0 && !S0 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	 le -> O31 = true;
+	::	else -> skip;
+	fi
+
+
+	X0 = O0;
+	X1 = O1;
+	X2 = O2;
+	X3 = O3;
+	X4 = O4;
+	X5 = O5;
+	X6 = O6;
+	X7 = O7;
+	X8 = O8;
+	X9 = O9;
+	X10 = O10;
+	X11 = O11;
+	X12 = O12;
+	X13 = O13;
+	X14 = O14;
+	X15 = O15;
+	X16 = O16;
+	X17 = O17;
+	X18 = O18;
+	X19 = O19;
+	X20 = O20;
+	X21 = O21;
+	X22 = O22;
+	X23 = O23;
+	X24 = O24;
+	X25 = O25;
+	X26 = O26;
+	X27 = O27;
+	X28 = O28;
+	X29 = O29;
+	X30 = true;
+	X31 = O31;
+
+	le = true;
+	done = false;
+
+	if
+	::	!done && !X31 && S31 -> done = true ;
+	::	else ->
+		if
+		::	!done && X31 && !S31 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X30 && S30 -> done = true ;
+	::	else ->
+		if
+		::	!done && X30 && !S30 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X29 && S29 -> done = true ;
+	::	else ->
+		if
+		::	!done && X29 && !S29 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X28 && S28 -> done = true ;
+	::	else ->
+		if
+		::	!done && X28 && !S28 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X27 && S27 -> done = true ;
+	::	else ->
+		if
+		::	!done && X27 && !S27 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X26 && S26 -> done = true ;
+	::	else ->
+		if
+		::	!done && X26 && !S26 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X25 && S25 -> done = true ;
+	::	else ->
+		if
+		::	!done && X25 && !S25 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X24 && S24 -> done = true ;
+	::	else ->
+		if
+		::	!done && X24 && !S24 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X23 && S23 -> done = true ;
+	::	else ->
+		if
+		::	!done && X23 && !S23 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X22 && S22 -> done = true ;
+	::	else ->
+		if
+		::	!done && X22 && !S22 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X21 && S21 -> done = true ;
+	::	else ->
+		if
+		::	!done && X21 && !S21 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X20 && S20 -> done = true ;
+	::	else ->
+		if
+		::	!done && X20 && !S20 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X19 && S19 -> done = true ;
+	::	else ->
+		if
+		::	!done && X19 && !S19 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X18 && S18 -> done = true ;
+	::	else ->
+		if
+		::	!done && X18 && !S18 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X17 && S17 -> done = true ;
+	::	else ->
+		if
+		::	!done && X17 && !S17 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X16 && S16 -> done = true ;
+	::	else ->
+		if
+		::	!done && X16 && !S16 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X15 && S15 -> done = true ;
+	::	else ->
+		if
+		::	!done && X15 && !S15 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X14 && S14 -> done = true ;
+	::	else ->
+		if
+		::	!done && X14 && !S14 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X13 && S13 -> done = true ;
+	::	else ->
+		if
+		::	!done && X13 && !S13 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X12 && S12 -> done = true ;
+	::	else ->
+		if
+		::	!done && X12 && !S12 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X11 && S11 -> done = true ;
+	::	else ->
+		if
+		::	!done && X11 && !S11 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X10 && S10 -> done = true ;
+	::	else ->
+		if
+		::	!done && X10 && !S10 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X9 && S9 -> done = true ;
+	::	else ->
+		if
+		::	!done && X9 && !S9 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X8 && S8 -> done = true ;
+	::	else ->
+		if
+		::	!done && X8 && !S8 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X7 && S7 -> done = true ;
+	::	else ->
+		if
+		::	!done && X7 && !S7 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X6 && S6 -> done = true ;
+	::	else ->
+		if
+		::	!done && X6 && !S6 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X5 && S5 -> done = true ;
+	::	else ->
+		if
+		::	!done && X5 && !S5 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X4 && S4 -> done = true ;
+	::	else ->
+		if
+		::	!done && X4 && !S4 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X3 && S3 -> done = true ;
+	::	else ->
+		if
+		::	!done && X3 && !S3 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X2 && S2 -> done = true ;
+	::	else ->
+		if
+		::	!done && X2 && !S2 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X1 && S1 -> done = true ;
+	::	else ->
+		if
+		::	!done && X1 && !S1 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X0 && S0 -> done = true ;
+	::	else ->
+		if
+		::	!done && X0 && !S0 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	 le -> O30 = true;
+	::	else -> skip;
+	fi
+
+
+	X0 = O0;
+	X1 = O1;
+	X2 = O2;
+	X3 = O3;
+	X4 = O4;
+	X5 = O5;
+	X6 = O6;
+	X7 = O7;
+	X8 = O8;
+	X9 = O9;
+	X10 = O10;
+	X11 = O11;
+	X12 = O12;
+	X13 = O13;
+	X14 = O14;
+	X15 = O15;
+	X16 = O16;
+	X17 = O17;
+	X18 = O18;
+	X19 = O19;
+	X20 = O20;
+	X21 = O21;
+	X22 = O22;
+	X23 = O23;
+	X24 = O24;
+	X25 = O25;
+	X26 = O26;
+	X27 = O27;
+	X28 = O28;
+	X29 = true;
+	X30 = O30;
+	X31 = O31;
+
+	le = true;
+	done = false;
+
+	if
+	::	!done && !X31 && S31 -> done = true ;
+	::	else ->
+		if
+		::	!done && X31 && !S31 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X30 && S30 -> done = true ;
+	::	else ->
+		if
+		::	!done && X30 && !S30 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X29 && S29 -> done = true ;
+	::	else ->
+		if
+		::	!done && X29 && !S29 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X28 && S28 -> done = true ;
+	::	else ->
+		if
+		::	!done && X28 && !S28 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X27 && S27 -> done = true ;
+	::	else ->
+		if
+		::	!done && X27 && !S27 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X26 && S26 -> done = true ;
+	::	else ->
+		if
+		::	!done && X26 && !S26 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X25 && S25 -> done = true ;
+	::	else ->
+		if
+		::	!done && X25 && !S25 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X24 && S24 -> done = true ;
+	::	else ->
+		if
+		::	!done && X24 && !S24 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X23 && S23 -> done = true ;
+	::	else ->
+		if
+		::	!done && X23 && !S23 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X22 && S22 -> done = true ;
+	::	else ->
+		if
+		::	!done && X22 && !S22 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X21 && S21 -> done = true ;
+	::	else ->
+		if
+		::	!done && X21 && !S21 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X20 && S20 -> done = true ;
+	::	else ->
+		if
+		::	!done && X20 && !S20 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X19 && S19 -> done = true ;
+	::	else ->
+		if
+		::	!done && X19 && !S19 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X18 && S18 -> done = true ;
+	::	else ->
+		if
+		::	!done && X18 && !S18 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X17 && S17 -> done = true ;
+	::	else ->
+		if
+		::	!done && X17 && !S17 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X16 && S16 -> done = true ;
+	::	else ->
+		if
+		::	!done && X16 && !S16 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X15 && S15 -> done = true ;
+	::	else ->
+		if
+		::	!done && X15 && !S15 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X14 && S14 -> done = true ;
+	::	else ->
+		if
+		::	!done && X14 && !S14 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X13 && S13 -> done = true ;
+	::	else ->
+		if
+		::	!done && X13 && !S13 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X12 && S12 -> done = true ;
+	::	else ->
+		if
+		::	!done && X12 && !S12 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X11 && S11 -> done = true ;
+	::	else ->
+		if
+		::	!done && X11 && !S11 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X10 && S10 -> done = true ;
+	::	else ->
+		if
+		::	!done && X10 && !S10 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X9 && S9 -> done = true ;
+	::	else ->
+		if
+		::	!done && X9 && !S9 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X8 && S8 -> done = true ;
+	::	else ->
+		if
+		::	!done && X8 && !S8 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X7 && S7 -> done = true ;
+	::	else ->
+		if
+		::	!done && X7 && !S7 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X6 && S6 -> done = true ;
+	::	else ->
+		if
+		::	!done && X6 && !S6 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X5 && S5 -> done = true ;
+	::	else ->
+		if
+		::	!done && X5 && !S5 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X4 && S4 -> done = true ;
+	::	else ->
+		if
+		::	!done && X4 && !S4 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X3 && S3 -> done = true ;
+	::	else ->
+		if
+		::	!done && X3 && !S3 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X2 && S2 -> done = true ;
+	::	else ->
+		if
+		::	!done && X2 && !S2 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X1 && S1 -> done = true ;
+	::	else ->
+		if
+		::	!done && X1 && !S1 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X0 && S0 -> done = true ;
+	::	else ->
+		if
+		::	!done && X0 && !S0 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	 le -> O29 = true;
+	::	else -> skip;
+	fi
+
+
+	X0 = O0;
+	X1 = O1;
+	X2 = O2;
+	X3 = O3;
+	X4 = O4;
+	X5 = O5;
+	X6 = O6;
+	X7 = O7;
+	X8 = O8;
+	X9 = O9;
+	X10 = O10;
+	X11 = O11;
+	X12 = O12;
+	X13 = O13;
+	X14 = O14;
+	X15 = O15;
+	X16 = O16;
+	X17 = O17;
+	X18 = O18;
+	X19 = O19;
+	X20 = O20;
+	X21 = O21;
+	X22 = O22;
+	X23 = O23;
+	X24 = O24;
+	X25 = O25;
+	X26 = O26;
+	X27 = O27;
+	X28 = true;
+	X29 = O29;
+	X30 = O30;
+	X31 = O31;
+
+	le = true;
+	done = false;
+
+	if
+	::	!done && !X31 && S31 -> done = true ;
+	::	else ->
+		if
+		::	!done && X31 && !S31 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X30 && S30 -> done = true ;
+	::	else ->
+		if
+		::	!done && X30 && !S30 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X29 && S29 -> done = true ;
+	::	else ->
+		if
+		::	!done && X29 && !S29 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X28 && S28 -> done = true ;
+	::	else ->
+		if
+		::	!done && X28 && !S28 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X27 && S27 -> done = true ;
+	::	else ->
+		if
+		::	!done && X27 && !S27 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X26 && S26 -> done = true ;
+	::	else ->
+		if
+		::	!done && X26 && !S26 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X25 && S25 -> done = true ;
+	::	else ->
+		if
+		::	!done && X25 && !S25 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X24 && S24 -> done = true ;
+	::	else ->
+		if
+		::	!done && X24 && !S24 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X23 && S23 -> done = true ;
+	::	else ->
+		if
+		::	!done && X23 && !S23 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X22 && S22 -> done = true ;
+	::	else ->
+		if
+		::	!done && X22 && !S22 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X21 && S21 -> done = true ;
+	::	else ->
+		if
+		::	!done && X21 && !S21 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X20 && S20 -> done = true ;
+	::	else ->
+		if
+		::	!done && X20 && !S20 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X19 && S19 -> done = true ;
+	::	else ->
+		if
+		::	!done && X19 && !S19 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X18 && S18 -> done = true ;
+	::	else ->
+		if
+		::	!done && X18 && !S18 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X17 && S17 -> done = true ;
+	::	else ->
+		if
+		::	!done && X17 && !S17 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X16 && S16 -> done = true ;
+	::	else ->
+		if
+		::	!done && X16 && !S16 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X15 && S15 -> done = true ;
+	::	else ->
+		if
+		::	!done && X15 && !S15 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X14 && S14 -> done = true ;
+	::	else ->
+		if
+		::	!done && X14 && !S14 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X13 && S13 -> done = true ;
+	::	else ->
+		if
+		::	!done && X13 && !S13 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X12 && S12 -> done = true ;
+	::	else ->
+		if
+		::	!done && X12 && !S12 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X11 && S11 -> done = true ;
+	::	else ->
+		if
+		::	!done && X11 && !S11 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X10 && S10 -> done = true ;
+	::	else ->
+		if
+		::	!done && X10 && !S10 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X9 && S9 -> done = true ;
+	::	else ->
+		if
+		::	!done && X9 && !S9 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X8 && S8 -> done = true ;
+	::	else ->
+		if
+		::	!done && X8 && !S8 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X7 && S7 -> done = true ;
+	::	else ->
+		if
+		::	!done && X7 && !S7 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X6 && S6 -> done = true ;
+	::	else ->
+		if
+		::	!done && X6 && !S6 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X5 && S5 -> done = true ;
+	::	else ->
+		if
+		::	!done && X5 && !S5 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X4 && S4 -> done = true ;
+	::	else ->
+		if
+		::	!done && X4 && !S4 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X3 && S3 -> done = true ;
+	::	else ->
+		if
+		::	!done && X3 && !S3 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X2 && S2 -> done = true ;
+	::	else ->
+		if
+		::	!done && X2 && !S2 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X1 && S1 -> done = true ;
+	::	else ->
+		if
+		::	!done && X1 && !S1 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X0 && S0 -> done = true ;
+	::	else ->
+		if
+		::	!done && X0 && !S0 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	 le -> O28 = true;
+	::	else -> skip;
+	fi
+
+
+	X0 = O0;
+	X1 = O1;
+	X2 = O2;
+	X3 = O3;
+	X4 = O4;
+	X5 = O5;
+	X6 = O6;
+	X7 = O7;
+	X8 = O8;
+	X9 = O9;
+	X10 = O10;
+	X11 = O11;
+	X12 = O12;
+	X13 = O13;
+	X14 = O14;
+	X15 = O15;
+	X16 = O16;
+	X17 = O17;
+	X18 = O18;
+	X19 = O19;
+	X20 = O20;
+	X21 = O21;
+	X22 = O22;
+	X23 = O23;
+	X24 = O24;
+	X25 = O25;
+	X26 = O26;
+	X27 = true;
+	X28 = O28;
+	X29 = O29;
+	X30 = O30;
+	X31 = O31;
+
+	le = true;
+	done = false;
+
+	if
+	::	!done && !X31 && S31 -> done = true ;
+	::	else ->
+		if
+		::	!done && X31 && !S31 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X30 && S30 -> done = true ;
+	::	else ->
+		if
+		::	!done && X30 && !S30 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X29 && S29 -> done = true ;
+	::	else ->
+		if
+		::	!done && X29 && !S29 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X28 && S28 -> done = true ;
+	::	else ->
+		if
+		::	!done && X28 && !S28 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X27 && S27 -> done = true ;
+	::	else ->
+		if
+		::	!done && X27 && !S27 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X26 && S26 -> done = true ;
+	::	else ->
+		if
+		::	!done && X26 && !S26 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X25 && S25 -> done = true ;
+	::	else ->
+		if
+		::	!done && X25 && !S25 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X24 && S24 -> done = true ;
+	::	else ->
+		if
+		::	!done && X24 && !S24 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X23 && S23 -> done = true ;
+	::	else ->
+		if
+		::	!done && X23 && !S23 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X22 && S22 -> done = true ;
+	::	else ->
+		if
+		::	!done && X22 && !S22 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X21 && S21 -> done = true ;
+	::	else ->
+		if
+		::	!done && X21 && !S21 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X20 && S20 -> done = true ;
+	::	else ->
+		if
+		::	!done && X20 && !S20 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X19 && S19 -> done = true ;
+	::	else ->
+		if
+		::	!done && X19 && !S19 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X18 && S18 -> done = true ;
+	::	else ->
+		if
+		::	!done && X18 && !S18 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X17 && S17 -> done = true ;
+	::	else ->
+		if
+		::	!done && X17 && !S17 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X16 && S16 -> done = true ;
+	::	else ->
+		if
+		::	!done && X16 && !S16 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X15 && S15 -> done = true ;
+	::	else ->
+		if
+		::	!done && X15 && !S15 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X14 && S14 -> done = true ;
+	::	else ->
+		if
+		::	!done && X14 && !S14 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X13 && S13 -> done = true ;
+	::	else ->
+		if
+		::	!done && X13 && !S13 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X12 && S12 -> done = true ;
+	::	else ->
+		if
+		::	!done && X12 && !S12 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X11 && S11 -> done = true ;
+	::	else ->
+		if
+		::	!done && X11 && !S11 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X10 && S10 -> done = true ;
+	::	else ->
+		if
+		::	!done && X10 && !S10 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X9 && S9 -> done = true ;
+	::	else ->
+		if
+		::	!done && X9 && !S9 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X8 && S8 -> done = true ;
+	::	else ->
+		if
+		::	!done && X8 && !S8 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X7 && S7 -> done = true ;
+	::	else ->
+		if
+		::	!done && X7 && !S7 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X6 && S6 -> done = true ;
+	::	else ->
+		if
+		::	!done && X6 && !S6 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X5 && S5 -> done = true ;
+	::	else ->
+		if
+		::	!done && X5 && !S5 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X4 && S4 -> done = true ;
+	::	else ->
+		if
+		::	!done && X4 && !S4 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X3 && S3 -> done = true ;
+	::	else ->
+		if
+		::	!done && X3 && !S3 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X2 && S2 -> done = true ;
+	::	else ->
+		if
+		::	!done && X2 && !S2 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X1 && S1 -> done = true ;
+	::	else ->
+		if
+		::	!done && X1 && !S1 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X0 && S0 -> done = true ;
+	::	else ->
+		if
+		::	!done && X0 && !S0 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	 le -> O27 = true;
+	::	else -> skip;
+	fi
+
+
+	X0 = O0;
+	X1 = O1;
+	X2 = O2;
+	X3 = O3;
+	X4 = O4;
+	X5 = O5;
+	X6 = O6;
+	X7 = O7;
+	X8 = O8;
+	X9 = O9;
+	X10 = O10;
+	X11 = O11;
+	X12 = O12;
+	X13 = O13;
+	X14 = O14;
+	X15 = O15;
+	X16 = O16;
+	X17 = O17;
+	X18 = O18;
+	X19 = O19;
+	X20 = O20;
+	X21 = O21;
+	X22 = O22;
+	X23 = O23;
+	X24 = O24;
+	X25 = O25;
+	X26 = true;
+	X27 = O27;
+	X28 = O28;
+	X29 = O29;
+	X30 = O30;
+	X31 = O31;
+
+	le = true;
+	done = false;
+
+	if
+	::	!done && !X31 && S31 -> done = true ;
+	::	else ->
+		if
+		::	!done && X31 && !S31 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X30 && S30 -> done = true ;
+	::	else ->
+		if
+		::	!done && X30 && !S30 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X29 && S29 -> done = true ;
+	::	else ->
+		if
+		::	!done && X29 && !S29 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X28 && S28 -> done = true ;
+	::	else ->
+		if
+		::	!done && X28 && !S28 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X27 && S27 -> done = true ;
+	::	else ->
+		if
+		::	!done && X27 && !S27 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X26 && S26 -> done = true ;
+	::	else ->
+		if
+		::	!done && X26 && !S26 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X25 && S25 -> done = true ;
+	::	else ->
+		if
+		::	!done && X25 && !S25 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X24 && S24 -> done = true ;
+	::	else ->
+		if
+		::	!done && X24 && !S24 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X23 && S23 -> done = true ;
+	::	else ->
+		if
+		::	!done && X23 && !S23 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X22 && S22 -> done = true ;
+	::	else ->
+		if
+		::	!done && X22 && !S22 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X21 && S21 -> done = true ;
+	::	else ->
+		if
+		::	!done && X21 && !S21 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X20 && S20 -> done = true ;
+	::	else ->
+		if
+		::	!done && X20 && !S20 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X19 && S19 -> done = true ;
+	::	else ->
+		if
+		::	!done && X19 && !S19 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X18 && S18 -> done = true ;
+	::	else ->
+		if
+		::	!done && X18 && !S18 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X17 && S17 -> done = true ;
+	::	else ->
+		if
+		::	!done && X17 && !S17 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X16 && S16 -> done = true ;
+	::	else ->
+		if
+		::	!done && X16 && !S16 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X15 && S15 -> done = true ;
+	::	else ->
+		if
+		::	!done && X15 && !S15 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X14 && S14 -> done = true ;
+	::	else ->
+		if
+		::	!done && X14 && !S14 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X13 && S13 -> done = true ;
+	::	else ->
+		if
+		::	!done && X13 && !S13 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X12 && S12 -> done = true ;
+	::	else ->
+		if
+		::	!done && X12 && !S12 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X11 && S11 -> done = true ;
+	::	else ->
+		if
+		::	!done && X11 && !S11 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X10 && S10 -> done = true ;
+	::	else ->
+		if
+		::	!done && X10 && !S10 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X9 && S9 -> done = true ;
+	::	else ->
+		if
+		::	!done && X9 && !S9 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X8 && S8 -> done = true ;
+	::	else ->
+		if
+		::	!done && X8 && !S8 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X7 && S7 -> done = true ;
+	::	else ->
+		if
+		::	!done && X7 && !S7 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X6 && S6 -> done = true ;
+	::	else ->
+		if
+		::	!done && X6 && !S6 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X5 && S5 -> done = true ;
+	::	else ->
+		if
+		::	!done && X5 && !S5 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X4 && S4 -> done = true ;
+	::	else ->
+		if
+		::	!done && X4 && !S4 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X3 && S3 -> done = true ;
+	::	else ->
+		if
+		::	!done && X3 && !S3 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X2 && S2 -> done = true ;
+	::	else ->
+		if
+		::	!done && X2 && !S2 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X1 && S1 -> done = true ;
+	::	else ->
+		if
+		::	!done && X1 && !S1 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X0 && S0 -> done = true ;
+	::	else ->
+		if
+		::	!done && X0 && !S0 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	 le -> O26 = true;
+	::	else -> skip;
+	fi
+
+
+	X0 = O0;
+	X1 = O1;
+	X2 = O2;
+	X3 = O3;
+	X4 = O4;
+	X5 = O5;
+	X6 = O6;
+	X7 = O7;
+	X8 = O8;
+	X9 = O9;
+	X10 = O10;
+	X11 = O11;
+	X12 = O12;
+	X13 = O13;
+	X14 = O14;
+	X15 = O15;
+	X16 = O16;
+	X17 = O17;
+	X18 = O18;
+	X19 = O19;
+	X20 = O20;
+	X21 = O21;
+	X22 = O22;
+	X23 = O23;
+	X24 = O24;
+	X25 = true;
+	X26 = O26;
+	X27 = O27;
+	X28 = O28;
+	X29 = O29;
+	X30 = O30;
+	X31 = O31;
+
+	le = true;
+	done = false;
+
+	if
+	::	!done && !X31 && S31 -> done = true ;
+	::	else ->
+		if
+		::	!done && X31 && !S31 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X30 && S30 -> done = true ;
+	::	else ->
+		if
+		::	!done && X30 && !S30 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X29 && S29 -> done = true ;
+	::	else ->
+		if
+		::	!done && X29 && !S29 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X28 && S28 -> done = true ;
+	::	else ->
+		if
+		::	!done && X28 && !S28 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X27 && S27 -> done = true ;
+	::	else ->
+		if
+		::	!done && X27 && !S27 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X26 && S26 -> done = true ;
+	::	else ->
+		if
+		::	!done && X26 && !S26 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X25 && S25 -> done = true ;
+	::	else ->
+		if
+		::	!done && X25 && !S25 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X24 && S24 -> done = true ;
+	::	else ->
+		if
+		::	!done && X24 && !S24 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X23 && S23 -> done = true ;
+	::	else ->
+		if
+		::	!done && X23 && !S23 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X22 && S22 -> done = true ;
+	::	else ->
+		if
+		::	!done && X22 && !S22 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X21 && S21 -> done = true ;
+	::	else ->
+		if
+		::	!done && X21 && !S21 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X20 && S20 -> done = true ;
+	::	else ->
+		if
+		::	!done && X20 && !S20 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X19 && S19 -> done = true ;
+	::	else ->
+		if
+		::	!done && X19 && !S19 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X18 && S18 -> done = true ;
+	::	else ->
+		if
+		::	!done && X18 && !S18 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X17 && S17 -> done = true ;
+	::	else ->
+		if
+		::	!done && X17 && !S17 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X16 && S16 -> done = true ;
+	::	else ->
+		if
+		::	!done && X16 && !S16 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X15 && S15 -> done = true ;
+	::	else ->
+		if
+		::	!done && X15 && !S15 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X14 && S14 -> done = true ;
+	::	else ->
+		if
+		::	!done && X14 && !S14 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X13 && S13 -> done = true ;
+	::	else ->
+		if
+		::	!done && X13 && !S13 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X12 && S12 -> done = true ;
+	::	else ->
+		if
+		::	!done && X12 && !S12 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X11 && S11 -> done = true ;
+	::	else ->
+		if
+		::	!done && X11 && !S11 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X10 && S10 -> done = true ;
+	::	else ->
+		if
+		::	!done && X10 && !S10 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X9 && S9 -> done = true ;
+	::	else ->
+		if
+		::	!done && X9 && !S9 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X8 && S8 -> done = true ;
+	::	else ->
+		if
+		::	!done && X8 && !S8 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X7 && S7 -> done = true ;
+	::	else ->
+		if
+		::	!done && X7 && !S7 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X6 && S6 -> done = true ;
+	::	else ->
+		if
+		::	!done && X6 && !S6 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X5 && S5 -> done = true ;
+	::	else ->
+		if
+		::	!done && X5 && !S5 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X4 && S4 -> done = true ;
+	::	else ->
+		if
+		::	!done && X4 && !S4 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X3 && S3 -> done = true ;
+	::	else ->
+		if
+		::	!done && X3 && !S3 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X2 && S2 -> done = true ;
+	::	else ->
+		if
+		::	!done && X2 && !S2 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X1 && S1 -> done = true ;
+	::	else ->
+		if
+		::	!done && X1 && !S1 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X0 && S0 -> done = true ;
+	::	else ->
+		if
+		::	!done && X0 && !S0 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	 le -> O25 = true;
+	::	else -> skip;
+	fi
+
+
+	X0 = O0;
+	X1 = O1;
+	X2 = O2;
+	X3 = O3;
+	X4 = O4;
+	X5 = O5;
+	X6 = O6;
+	X7 = O7;
+	X8 = O8;
+	X9 = O9;
+	X10 = O10;
+	X11 = O11;
+	X12 = O12;
+	X13 = O13;
+	X14 = O14;
+	X15 = O15;
+	X16 = O16;
+	X17 = O17;
+	X18 = O18;
+	X19 = O19;
+	X20 = O20;
+	X21 = O21;
+	X22 = O22;
+	X23 = O23;
+	X24 = true;
+	X25 = O25;
+	X26 = O26;
+	X27 = O27;
+	X28 = O28;
+	X29 = O29;
+	X30 = O30;
+	X31 = O31;
+
+	le = true;
+	done = false;
+
+	if
+	::	!done && !X31 && S31 -> done = true ;
+	::	else ->
+		if
+		::	!done && X31 && !S31 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X30 && S30 -> done = true ;
+	::	else ->
+		if
+		::	!done && X30 && !S30 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X29 && S29 -> done = true ;
+	::	else ->
+		if
+		::	!done && X29 && !S29 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X28 && S28 -> done = true ;
+	::	else ->
+		if
+		::	!done && X28 && !S28 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X27 && S27 -> done = true ;
+	::	else ->
+		if
+		::	!done && X27 && !S27 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X26 && S26 -> done = true ;
+	::	else ->
+		if
+		::	!done && X26 && !S26 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X25 && S25 -> done = true ;
+	::	else ->
+		if
+		::	!done && X25 && !S25 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X24 && S24 -> done = true ;
+	::	else ->
+		if
+		::	!done && X24 && !S24 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X23 && S23 -> done = true ;
+	::	else ->
+		if
+		::	!done && X23 && !S23 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X22 && S22 -> done = true ;
+	::	else ->
+		if
+		::	!done && X22 && !S22 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X21 && S21 -> done = true ;
+	::	else ->
+		if
+		::	!done && X21 && !S21 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X20 && S20 -> done = true ;
+	::	else ->
+		if
+		::	!done && X20 && !S20 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X19 && S19 -> done = true ;
+	::	else ->
+		if
+		::	!done && X19 && !S19 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X18 && S18 -> done = true ;
+	::	else ->
+		if
+		::	!done && X18 && !S18 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X17 && S17 -> done = true ;
+	::	else ->
+		if
+		::	!done && X17 && !S17 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X16 && S16 -> done = true ;
+	::	else ->
+		if
+		::	!done && X16 && !S16 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X15 && S15 -> done = true ;
+	::	else ->
+		if
+		::	!done && X15 && !S15 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X14 && S14 -> done = true ;
+	::	else ->
+		if
+		::	!done && X14 && !S14 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X13 && S13 -> done = true ;
+	::	else ->
+		if
+		::	!done && X13 && !S13 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X12 && S12 -> done = true ;
+	::	else ->
+		if
+		::	!done && X12 && !S12 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X11 && S11 -> done = true ;
+	::	else ->
+		if
+		::	!done && X11 && !S11 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X10 && S10 -> done = true ;
+	::	else ->
+		if
+		::	!done && X10 && !S10 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X9 && S9 -> done = true ;
+	::	else ->
+		if
+		::	!done && X9 && !S9 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X8 && S8 -> done = true ;
+	::	else ->
+		if
+		::	!done && X8 && !S8 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X7 && S7 -> done = true ;
+	::	else ->
+		if
+		::	!done && X7 && !S7 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X6 && S6 -> done = true ;
+	::	else ->
+		if
+		::	!done && X6 && !S6 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X5 && S5 -> done = true ;
+	::	else ->
+		if
+		::	!done && X5 && !S5 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X4 && S4 -> done = true ;
+	::	else ->
+		if
+		::	!done && X4 && !S4 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X3 && S3 -> done = true ;
+	::	else ->
+		if
+		::	!done && X3 && !S3 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X2 && S2 -> done = true ;
+	::	else ->
+		if
+		::	!done && X2 && !S2 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X1 && S1 -> done = true ;
+	::	else ->
+		if
+		::	!done && X1 && !S1 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X0 && S0 -> done = true ;
+	::	else ->
+		if
+		::	!done && X0 && !S0 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	 le -> O24 = true;
+	::	else -> skip;
+	fi
+
+
+	X0 = O0;
+	X1 = O1;
+	X2 = O2;
+	X3 = O3;
+	X4 = O4;
+	X5 = O5;
+	X6 = O6;
+	X7 = O7;
+	X8 = O8;
+	X9 = O9;
+	X10 = O10;
+	X11 = O11;
+	X12 = O12;
+	X13 = O13;
+	X14 = O14;
+	X15 = O15;
+	X16 = O16;
+	X17 = O17;
+	X18 = O18;
+	X19 = O19;
+	X20 = O20;
+	X21 = O21;
+	X22 = O22;
+	X23 = true;
+	X24 = O24;
+	X25 = O25;
+	X26 = O26;
+	X27 = O27;
+	X28 = O28;
+	X29 = O29;
+	X30 = O30;
+	X31 = O31;
+
+	le = true;
+	done = false;
+
+	if
+	::	!done && !X31 && S31 -> done = true ;
+	::	else ->
+		if
+		::	!done && X31 && !S31 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X30 && S30 -> done = true ;
+	::	else ->
+		if
+		::	!done && X30 && !S30 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X29 && S29 -> done = true ;
+	::	else ->
+		if
+		::	!done && X29 && !S29 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X28 && S28 -> done = true ;
+	::	else ->
+		if
+		::	!done && X28 && !S28 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X27 && S27 -> done = true ;
+	::	else ->
+		if
+		::	!done && X27 && !S27 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X26 && S26 -> done = true ;
+	::	else ->
+		if
+		::	!done && X26 && !S26 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X25 && S25 -> done = true ;
+	::	else ->
+		if
+		::	!done && X25 && !S25 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X24 && S24 -> done = true ;
+	::	else ->
+		if
+		::	!done && X24 && !S24 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X23 && S23 -> done = true ;
+	::	else ->
+		if
+		::	!done && X23 && !S23 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X22 && S22 -> done = true ;
+	::	else ->
+		if
+		::	!done && X22 && !S22 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X21 && S21 -> done = true ;
+	::	else ->
+		if
+		::	!done && X21 && !S21 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X20 && S20 -> done = true ;
+	::	else ->
+		if
+		::	!done && X20 && !S20 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X19 && S19 -> done = true ;
+	::	else ->
+		if
+		::	!done && X19 && !S19 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X18 && S18 -> done = true ;
+	::	else ->
+		if
+		::	!done && X18 && !S18 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X17 && S17 -> done = true ;
+	::	else ->
+		if
+		::	!done && X17 && !S17 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X16 && S16 -> done = true ;
+	::	else ->
+		if
+		::	!done && X16 && !S16 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X15 && S15 -> done = true ;
+	::	else ->
+		if
+		::	!done && X15 && !S15 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X14 && S14 -> done = true ;
+	::	else ->
+		if
+		::	!done && X14 && !S14 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X13 && S13 -> done = true ;
+	::	else ->
+		if
+		::	!done && X13 && !S13 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X12 && S12 -> done = true ;
+	::	else ->
+		if
+		::	!done && X12 && !S12 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X11 && S11 -> done = true ;
+	::	else ->
+		if
+		::	!done && X11 && !S11 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X10 && S10 -> done = true ;
+	::	else ->
+		if
+		::	!done && X10 && !S10 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X9 && S9 -> done = true ;
+	::	else ->
+		if
+		::	!done && X9 && !S9 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X8 && S8 -> done = true ;
+	::	else ->
+		if
+		::	!done && X8 && !S8 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X7 && S7 -> done = true ;
+	::	else ->
+		if
+		::	!done && X7 && !S7 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X6 && S6 -> done = true ;
+	::	else ->
+		if
+		::	!done && X6 && !S6 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X5 && S5 -> done = true ;
+	::	else ->
+		if
+		::	!done && X5 && !S5 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X4 && S4 -> done = true ;
+	::	else ->
+		if
+		::	!done && X4 && !S4 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X3 && S3 -> done = true ;
+	::	else ->
+		if
+		::	!done && X3 && !S3 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X2 && S2 -> done = true ;
+	::	else ->
+		if
+		::	!done && X2 && !S2 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X1 && S1 -> done = true ;
+	::	else ->
+		if
+		::	!done && X1 && !S1 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X0 && S0 -> done = true ;
+	::	else ->
+		if
+		::	!done && X0 && !S0 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	 le -> O23 = true;
+	::	else -> skip;
+	fi
+
+
+	X0 = O0;
+	X1 = O1;
+	X2 = O2;
+	X3 = O3;
+	X4 = O4;
+	X5 = O5;
+	X6 = O6;
+	X7 = O7;
+	X8 = O8;
+	X9 = O9;
+	X10 = O10;
+	X11 = O11;
+	X12 = O12;
+	X13 = O13;
+	X14 = O14;
+	X15 = O15;
+	X16 = O16;
+	X17 = O17;
+	X18 = O18;
+	X19 = O19;
+	X20 = O20;
+	X21 = O21;
+	X22 = true;
+	X23 = O23;
+	X24 = O24;
+	X25 = O25;
+	X26 = O26;
+	X27 = O27;
+	X28 = O28;
+	X29 = O29;
+	X30 = O30;
+	X31 = O31;
+
+	le = true;
+	done = false;
+
+	if
+	::	!done && !X31 && S31 -> done = true ;
+	::	else ->
+		if
+		::	!done && X31 && !S31 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X30 && S30 -> done = true ;
+	::	else ->
+		if
+		::	!done && X30 && !S30 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X29 && S29 -> done = true ;
+	::	else ->
+		if
+		::	!done && X29 && !S29 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X28 && S28 -> done = true ;
+	::	else ->
+		if
+		::	!done && X28 && !S28 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X27 && S27 -> done = true ;
+	::	else ->
+		if
+		::	!done && X27 && !S27 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X26 && S26 -> done = true ;
+	::	else ->
+		if
+		::	!done && X26 && !S26 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X25 && S25 -> done = true ;
+	::	else ->
+		if
+		::	!done && X25 && !S25 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X24 && S24 -> done = true ;
+	::	else ->
+		if
+		::	!done && X24 && !S24 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X23 && S23 -> done = true ;
+	::	else ->
+		if
+		::	!done && X23 && !S23 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X22 && S22 -> done = true ;
+	::	else ->
+		if
+		::	!done && X22 && !S22 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X21 && S21 -> done = true ;
+	::	else ->
+		if
+		::	!done && X21 && !S21 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X20 && S20 -> done = true ;
+	::	else ->
+		if
+		::	!done && X20 && !S20 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X19 && S19 -> done = true ;
+	::	else ->
+		if
+		::	!done && X19 && !S19 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X18 && S18 -> done = true ;
+	::	else ->
+		if
+		::	!done && X18 && !S18 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X17 && S17 -> done = true ;
+	::	else ->
+		if
+		::	!done && X17 && !S17 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X16 && S16 -> done = true ;
+	::	else ->
+		if
+		::	!done && X16 && !S16 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X15 && S15 -> done = true ;
+	::	else ->
+		if
+		::	!done && X15 && !S15 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X14 && S14 -> done = true ;
+	::	else ->
+		if
+		::	!done && X14 && !S14 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X13 && S13 -> done = true ;
+	::	else ->
+		if
+		::	!done && X13 && !S13 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X12 && S12 -> done = true ;
+	::	else ->
+		if
+		::	!done && X12 && !S12 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X11 && S11 -> done = true ;
+	::	else ->
+		if
+		::	!done && X11 && !S11 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X10 && S10 -> done = true ;
+	::	else ->
+		if
+		::	!done && X10 && !S10 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X9 && S9 -> done = true ;
+	::	else ->
+		if
+		::	!done && X9 && !S9 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X8 && S8 -> done = true ;
+	::	else ->
+		if
+		::	!done && X8 && !S8 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X7 && S7 -> done = true ;
+	::	else ->
+		if
+		::	!done && X7 && !S7 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X6 && S6 -> done = true ;
+	::	else ->
+		if
+		::	!done && X6 && !S6 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X5 && S5 -> done = true ;
+	::	else ->
+		if
+		::	!done && X5 && !S5 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X4 && S4 -> done = true ;
+	::	else ->
+		if
+		::	!done && X4 && !S4 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X3 && S3 -> done = true ;
+	::	else ->
+		if
+		::	!done && X3 && !S3 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X2 && S2 -> done = true ;
+	::	else ->
+		if
+		::	!done && X2 && !S2 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X1 && S1 -> done = true ;
+	::	else ->
+		if
+		::	!done && X1 && !S1 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X0 && S0 -> done = true ;
+	::	else ->
+		if
+		::	!done && X0 && !S0 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	 le -> O22 = true;
+	::	else -> skip;
+	fi
+
+
+	X0 = O0;
+	X1 = O1;
+	X2 = O2;
+	X3 = O3;
+	X4 = O4;
+	X5 = O5;
+	X6 = O6;
+	X7 = O7;
+	X8 = O8;
+	X9 = O9;
+	X10 = O10;
+	X11 = O11;
+	X12 = O12;
+	X13 = O13;
+	X14 = O14;
+	X15 = O15;
+	X16 = O16;
+	X17 = O17;
+	X18 = O18;
+	X19 = O19;
+	X20 = O20;
+	X21 = true;
+	X22 = O22;
+	X23 = O23;
+	X24 = O24;
+	X25 = O25;
+	X26 = O26;
+	X27 = O27;
+	X28 = O28;
+	X29 = O29;
+	X30 = O30;
+	X31 = O31;
+
+	le = true;
+	done = false;
+
+	if
+	::	!done && !X31 && S31 -> done = true ;
+	::	else ->
+		if
+		::	!done && X31 && !S31 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X30 && S30 -> done = true ;
+	::	else ->
+		if
+		::	!done && X30 && !S30 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X29 && S29 -> done = true ;
+	::	else ->
+		if
+		::	!done && X29 && !S29 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X28 && S28 -> done = true ;
+	::	else ->
+		if
+		::	!done && X28 && !S28 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X27 && S27 -> done = true ;
+	::	else ->
+		if
+		::	!done && X27 && !S27 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X26 && S26 -> done = true ;
+	::	else ->
+		if
+		::	!done && X26 && !S26 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X25 && S25 -> done = true ;
+	::	else ->
+		if
+		::	!done && X25 && !S25 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X24 && S24 -> done = true ;
+	::	else ->
+		if
+		::	!done && X24 && !S24 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X23 && S23 -> done = true ;
+	::	else ->
+		if
+		::	!done && X23 && !S23 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X22 && S22 -> done = true ;
+	::	else ->
+		if
+		::	!done && X22 && !S22 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X21 && S21 -> done = true ;
+	::	else ->
+		if
+		::	!done && X21 && !S21 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X20 && S20 -> done = true ;
+	::	else ->
+		if
+		::	!done && X20 && !S20 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X19 && S19 -> done = true ;
+	::	else ->
+		if
+		::	!done && X19 && !S19 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X18 && S18 -> done = true ;
+	::	else ->
+		if
+		::	!done && X18 && !S18 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X17 && S17 -> done = true ;
+	::	else ->
+		if
+		::	!done && X17 && !S17 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X16 && S16 -> done = true ;
+	::	else ->
+		if
+		::	!done && X16 && !S16 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X15 && S15 -> done = true ;
+	::	else ->
+		if
+		::	!done && X15 && !S15 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X14 && S14 -> done = true ;
+	::	else ->
+		if
+		::	!done && X14 && !S14 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X13 && S13 -> done = true ;
+	::	else ->
+		if
+		::	!done && X13 && !S13 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X12 && S12 -> done = true ;
+	::	else ->
+		if
+		::	!done && X12 && !S12 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X11 && S11 -> done = true ;
+	::	else ->
+		if
+		::	!done && X11 && !S11 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X10 && S10 -> done = true ;
+	::	else ->
+		if
+		::	!done && X10 && !S10 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X9 && S9 -> done = true ;
+	::	else ->
+		if
+		::	!done && X9 && !S9 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X8 && S8 -> done = true ;
+	::	else ->
+		if
+		::	!done && X8 && !S8 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X7 && S7 -> done = true ;
+	::	else ->
+		if
+		::	!done && X7 && !S7 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X6 && S6 -> done = true ;
+	::	else ->
+		if
+		::	!done && X6 && !S6 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X5 && S5 -> done = true ;
+	::	else ->
+		if
+		::	!done && X5 && !S5 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X4 && S4 -> done = true ;
+	::	else ->
+		if
+		::	!done && X4 && !S4 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X3 && S3 -> done = true ;
+	::	else ->
+		if
+		::	!done && X3 && !S3 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X2 && S2 -> done = true ;
+	::	else ->
+		if
+		::	!done && X2 && !S2 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X1 && S1 -> done = true ;
+	::	else ->
+		if
+		::	!done && X1 && !S1 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X0 && S0 -> done = true ;
+	::	else ->
+		if
+		::	!done && X0 && !S0 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	 le -> O21 = true;
+	::	else -> skip;
+	fi
+
+
+	X0 = O0;
+	X1 = O1;
+	X2 = O2;
+	X3 = O3;
+	X4 = O4;
+	X5 = O5;
+	X6 = O6;
+	X7 = O7;
+	X8 = O8;
+	X9 = O9;
+	X10 = O10;
+	X11 = O11;
+	X12 = O12;
+	X13 = O13;
+	X14 = O14;
+	X15 = O15;
+	X16 = O16;
+	X17 = O17;
+	X18 = O18;
+	X19 = O19;
+	X20 = true;
+	X21 = O21;
+	X22 = O22;
+	X23 = O23;
+	X24 = O24;
+	X25 = O25;
+	X26 = O26;
+	X27 = O27;
+	X28 = O28;
+	X29 = O29;
+	X30 = O30;
+	X31 = O31;
+
+	le = true;
+	done = false;
+
+	if
+	::	!done && !X31 && S31 -> done = true ;
+	::	else ->
+		if
+		::	!done && X31 && !S31 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X30 && S30 -> done = true ;
+	::	else ->
+		if
+		::	!done && X30 && !S30 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X29 && S29 -> done = true ;
+	::	else ->
+		if
+		::	!done && X29 && !S29 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X28 && S28 -> done = true ;
+	::	else ->
+		if
+		::	!done && X28 && !S28 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X27 && S27 -> done = true ;
+	::	else ->
+		if
+		::	!done && X27 && !S27 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X26 && S26 -> done = true ;
+	::	else ->
+		if
+		::	!done && X26 && !S26 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X25 && S25 -> done = true ;
+	::	else ->
+		if
+		::	!done && X25 && !S25 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X24 && S24 -> done = true ;
+	::	else ->
+		if
+		::	!done && X24 && !S24 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X23 && S23 -> done = true ;
+	::	else ->
+		if
+		::	!done && X23 && !S23 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X22 && S22 -> done = true ;
+	::	else ->
+		if
+		::	!done && X22 && !S22 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X21 && S21 -> done = true ;
+	::	else ->
+		if
+		::	!done && X21 && !S21 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X20 && S20 -> done = true ;
+	::	else ->
+		if
+		::	!done && X20 && !S20 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X19 && S19 -> done = true ;
+	::	else ->
+		if
+		::	!done && X19 && !S19 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X18 && S18 -> done = true ;
+	::	else ->
+		if
+		::	!done && X18 && !S18 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X17 && S17 -> done = true ;
+	::	else ->
+		if
+		::	!done && X17 && !S17 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X16 && S16 -> done = true ;
+	::	else ->
+		if
+		::	!done && X16 && !S16 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X15 && S15 -> done = true ;
+	::	else ->
+		if
+		::	!done && X15 && !S15 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X14 && S14 -> done = true ;
+	::	else ->
+		if
+		::	!done && X14 && !S14 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X13 && S13 -> done = true ;
+	::	else ->
+		if
+		::	!done && X13 && !S13 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X12 && S12 -> done = true ;
+	::	else ->
+		if
+		::	!done && X12 && !S12 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X11 && S11 -> done = true ;
+	::	else ->
+		if
+		::	!done && X11 && !S11 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X10 && S10 -> done = true ;
+	::	else ->
+		if
+		::	!done && X10 && !S10 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X9 && S9 -> done = true ;
+	::	else ->
+		if
+		::	!done && X9 && !S9 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X8 && S8 -> done = true ;
+	::	else ->
+		if
+		::	!done && X8 && !S8 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X7 && S7 -> done = true ;
+	::	else ->
+		if
+		::	!done && X7 && !S7 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X6 && S6 -> done = true ;
+	::	else ->
+		if
+		::	!done && X6 && !S6 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X5 && S5 -> done = true ;
+	::	else ->
+		if
+		::	!done && X5 && !S5 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X4 && S4 -> done = true ;
+	::	else ->
+		if
+		::	!done && X4 && !S4 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X3 && S3 -> done = true ;
+	::	else ->
+		if
+		::	!done && X3 && !S3 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X2 && S2 -> done = true ;
+	::	else ->
+		if
+		::	!done && X2 && !S2 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X1 && S1 -> done = true ;
+	::	else ->
+		if
+		::	!done && X1 && !S1 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X0 && S0 -> done = true ;
+	::	else ->
+		if
+		::	!done && X0 && !S0 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	 le -> O20 = true;
+	::	else -> skip;
+	fi
+
+
+	X0 = O0;
+	X1 = O1;
+	X2 = O2;
+	X3 = O3;
+	X4 = O4;
+	X5 = O5;
+	X6 = O6;
+	X7 = O7;
+	X8 = O8;
+	X9 = O9;
+	X10 = O10;
+	X11 = O11;
+	X12 = O12;
+	X13 = O13;
+	X14 = O14;
+	X15 = O15;
+	X16 = O16;
+	X17 = O17;
+	X18 = O18;
+	X19 = true;
+	X20 = O20;
+	X21 = O21;
+	X22 = O22;
+	X23 = O23;
+	X24 = O24;
+	X25 = O25;
+	X26 = O26;
+	X27 = O27;
+	X28 = O28;
+	X29 = O29;
+	X30 = O30;
+	X31 = O31;
+
+	le = true;
+	done = false;
+
+	if
+	::	!done && !X31 && S31 -> done = true ;
+	::	else ->
+		if
+		::	!done && X31 && !S31 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X30 && S30 -> done = true ;
+	::	else ->
+		if
+		::	!done && X30 && !S30 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X29 && S29 -> done = true ;
+	::	else ->
+		if
+		::	!done && X29 && !S29 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X28 && S28 -> done = true ;
+	::	else ->
+		if
+		::	!done && X28 && !S28 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X27 && S27 -> done = true ;
+	::	else ->
+		if
+		::	!done && X27 && !S27 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X26 && S26 -> done = true ;
+	::	else ->
+		if
+		::	!done && X26 && !S26 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X25 && S25 -> done = true ;
+	::	else ->
+		if
+		::	!done && X25 && !S25 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X24 && S24 -> done = true ;
+	::	else ->
+		if
+		::	!done && X24 && !S24 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X23 && S23 -> done = true ;
+	::	else ->
+		if
+		::	!done && X23 && !S23 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X22 && S22 -> done = true ;
+	::	else ->
+		if
+		::	!done && X22 && !S22 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X21 && S21 -> done = true ;
+	::	else ->
+		if
+		::	!done && X21 && !S21 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X20 && S20 -> done = true ;
+	::	else ->
+		if
+		::	!done && X20 && !S20 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X19 && S19 -> done = true ;
+	::	else ->
+		if
+		::	!done && X19 && !S19 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X18 && S18 -> done = true ;
+	::	else ->
+		if
+		::	!done && X18 && !S18 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X17 && S17 -> done = true ;
+	::	else ->
+		if
+		::	!done && X17 && !S17 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X16 && S16 -> done = true ;
+	::	else ->
+		if
+		::	!done && X16 && !S16 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X15 && S15 -> done = true ;
+	::	else ->
+		if
+		::	!done && X15 && !S15 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X14 && S14 -> done = true ;
+	::	else ->
+		if
+		::	!done && X14 && !S14 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X13 && S13 -> done = true ;
+	::	else ->
+		if
+		::	!done && X13 && !S13 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X12 && S12 -> done = true ;
+	::	else ->
+		if
+		::	!done && X12 && !S12 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X11 && S11 -> done = true ;
+	::	else ->
+		if
+		::	!done && X11 && !S11 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X10 && S10 -> done = true ;
+	::	else ->
+		if
+		::	!done && X10 && !S10 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X9 && S9 -> done = true ;
+	::	else ->
+		if
+		::	!done && X9 && !S9 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X8 && S8 -> done = true ;
+	::	else ->
+		if
+		::	!done && X8 && !S8 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X7 && S7 -> done = true ;
+	::	else ->
+		if
+		::	!done && X7 && !S7 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X6 && S6 -> done = true ;
+	::	else ->
+		if
+		::	!done && X6 && !S6 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X5 && S5 -> done = true ;
+	::	else ->
+		if
+		::	!done && X5 && !S5 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X4 && S4 -> done = true ;
+	::	else ->
+		if
+		::	!done && X4 && !S4 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X3 && S3 -> done = true ;
+	::	else ->
+		if
+		::	!done && X3 && !S3 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X2 && S2 -> done = true ;
+	::	else ->
+		if
+		::	!done && X2 && !S2 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X1 && S1 -> done = true ;
+	::	else ->
+		if
+		::	!done && X1 && !S1 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X0 && S0 -> done = true ;
+	::	else ->
+		if
+		::	!done && X0 && !S0 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	 le -> O19 = true;
+	::	else -> skip;
+	fi
+
+
+	X0 = O0;
+	X1 = O1;
+	X2 = O2;
+	X3 = O3;
+	X4 = O4;
+	X5 = O5;
+	X6 = O6;
+	X7 = O7;
+	X8 = O8;
+	X9 = O9;
+	X10 = O10;
+	X11 = O11;
+	X12 = O12;
+	X13 = O13;
+	X14 = O14;
+	X15 = O15;
+	X16 = O16;
+	X17 = O17;
+	X18 = true;
+	X19 = O19;
+	X20 = O20;
+	X21 = O21;
+	X22 = O22;
+	X23 = O23;
+	X24 = O24;
+	X25 = O25;
+	X26 = O26;
+	X27 = O27;
+	X28 = O28;
+	X29 = O29;
+	X30 = O30;
+	X31 = O31;
+
+	le = true;
+	done = false;
+
+	if
+	::	!done && !X31 && S31 -> done = true ;
+	::	else ->
+		if
+		::	!done && X31 && !S31 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X30 && S30 -> done = true ;
+	::	else ->
+		if
+		::	!done && X30 && !S30 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X29 && S29 -> done = true ;
+	::	else ->
+		if
+		::	!done && X29 && !S29 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X28 && S28 -> done = true ;
+	::	else ->
+		if
+		::	!done && X28 && !S28 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X27 && S27 -> done = true ;
+	::	else ->
+		if
+		::	!done && X27 && !S27 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X26 && S26 -> done = true ;
+	::	else ->
+		if
+		::	!done && X26 && !S26 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X25 && S25 -> done = true ;
+	::	else ->
+		if
+		::	!done && X25 && !S25 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X24 && S24 -> done = true ;
+	::	else ->
+		if
+		::	!done && X24 && !S24 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X23 && S23 -> done = true ;
+	::	else ->
+		if
+		::	!done && X23 && !S23 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X22 && S22 -> done = true ;
+	::	else ->
+		if
+		::	!done && X22 && !S22 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X21 && S21 -> done = true ;
+	::	else ->
+		if
+		::	!done && X21 && !S21 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X20 && S20 -> done = true ;
+	::	else ->
+		if
+		::	!done && X20 && !S20 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X19 && S19 -> done = true ;
+	::	else ->
+		if
+		::	!done && X19 && !S19 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X18 && S18 -> done = true ;
+	::	else ->
+		if
+		::	!done && X18 && !S18 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X17 && S17 -> done = true ;
+	::	else ->
+		if
+		::	!done && X17 && !S17 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X16 && S16 -> done = true ;
+	::	else ->
+		if
+		::	!done && X16 && !S16 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X15 && S15 -> done = true ;
+	::	else ->
+		if
+		::	!done && X15 && !S15 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X14 && S14 -> done = true ;
+	::	else ->
+		if
+		::	!done && X14 && !S14 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X13 && S13 -> done = true ;
+	::	else ->
+		if
+		::	!done && X13 && !S13 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X12 && S12 -> done = true ;
+	::	else ->
+		if
+		::	!done && X12 && !S12 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X11 && S11 -> done = true ;
+	::	else ->
+		if
+		::	!done && X11 && !S11 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X10 && S10 -> done = true ;
+	::	else ->
+		if
+		::	!done && X10 && !S10 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X9 && S9 -> done = true ;
+	::	else ->
+		if
+		::	!done && X9 && !S9 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X8 && S8 -> done = true ;
+	::	else ->
+		if
+		::	!done && X8 && !S8 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X7 && S7 -> done = true ;
+	::	else ->
+		if
+		::	!done && X7 && !S7 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X6 && S6 -> done = true ;
+	::	else ->
+		if
+		::	!done && X6 && !S6 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X5 && S5 -> done = true ;
+	::	else ->
+		if
+		::	!done && X5 && !S5 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X4 && S4 -> done = true ;
+	::	else ->
+		if
+		::	!done && X4 && !S4 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X3 && S3 -> done = true ;
+	::	else ->
+		if
+		::	!done && X3 && !S3 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X2 && S2 -> done = true ;
+	::	else ->
+		if
+		::	!done && X2 && !S2 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X1 && S1 -> done = true ;
+	::	else ->
+		if
+		::	!done && X1 && !S1 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X0 && S0 -> done = true ;
+	::	else ->
+		if
+		::	!done && X0 && !S0 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	 le -> O18 = true;
+	::	else -> skip;
+	fi
+
+
+	X0 = O0;
+	X1 = O1;
+	X2 = O2;
+	X3 = O3;
+	X4 = O4;
+	X5 = O5;
+	X6 = O6;
+	X7 = O7;
+	X8 = O8;
+	X9 = O9;
+	X10 = O10;
+	X11 = O11;
+	X12 = O12;
+	X13 = O13;
+	X14 = O14;
+	X15 = O15;
+	X16 = O16;
+	X17 = true;
+	X18 = O18;
+	X19 = O19;
+	X20 = O20;
+	X21 = O21;
+	X22 = O22;
+	X23 = O23;
+	X24 = O24;
+	X25 = O25;
+	X26 = O26;
+	X27 = O27;
+	X28 = O28;
+	X29 = O29;
+	X30 = O30;
+	X31 = O31;
+
+	le = true;
+	done = false;
+
+	if
+	::	!done && !X31 && S31 -> done = true ;
+	::	else ->
+		if
+		::	!done && X31 && !S31 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X30 && S30 -> done = true ;
+	::	else ->
+		if
+		::	!done && X30 && !S30 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X29 && S29 -> done = true ;
+	::	else ->
+		if
+		::	!done && X29 && !S29 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X28 && S28 -> done = true ;
+	::	else ->
+		if
+		::	!done && X28 && !S28 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X27 && S27 -> done = true ;
+	::	else ->
+		if
+		::	!done && X27 && !S27 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X26 && S26 -> done = true ;
+	::	else ->
+		if
+		::	!done && X26 && !S26 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X25 && S25 -> done = true ;
+	::	else ->
+		if
+		::	!done && X25 && !S25 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X24 && S24 -> done = true ;
+	::	else ->
+		if
+		::	!done && X24 && !S24 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X23 && S23 -> done = true ;
+	::	else ->
+		if
+		::	!done && X23 && !S23 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X22 && S22 -> done = true ;
+	::	else ->
+		if
+		::	!done && X22 && !S22 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X21 && S21 -> done = true ;
+	::	else ->
+		if
+		::	!done && X21 && !S21 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X20 && S20 -> done = true ;
+	::	else ->
+		if
+		::	!done && X20 && !S20 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X19 && S19 -> done = true ;
+	::	else ->
+		if
+		::	!done && X19 && !S19 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X18 && S18 -> done = true ;
+	::	else ->
+		if
+		::	!done && X18 && !S18 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X17 && S17 -> done = true ;
+	::	else ->
+		if
+		::	!done && X17 && !S17 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X16 && S16 -> done = true ;
+	::	else ->
+		if
+		::	!done && X16 && !S16 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X15 && S15 -> done = true ;
+	::	else ->
+		if
+		::	!done && X15 && !S15 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X14 && S14 -> done = true ;
+	::	else ->
+		if
+		::	!done && X14 && !S14 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X13 && S13 -> done = true ;
+	::	else ->
+		if
+		::	!done && X13 && !S13 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X12 && S12 -> done = true ;
+	::	else ->
+		if
+		::	!done && X12 && !S12 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X11 && S11 -> done = true ;
+	::	else ->
+		if
+		::	!done && X11 && !S11 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X10 && S10 -> done = true ;
+	::	else ->
+		if
+		::	!done && X10 && !S10 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X9 && S9 -> done = true ;
+	::	else ->
+		if
+		::	!done && X9 && !S9 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X8 && S8 -> done = true ;
+	::	else ->
+		if
+		::	!done && X8 && !S8 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X7 && S7 -> done = true ;
+	::	else ->
+		if
+		::	!done && X7 && !S7 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X6 && S6 -> done = true ;
+	::	else ->
+		if
+		::	!done && X6 && !S6 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X5 && S5 -> done = true ;
+	::	else ->
+		if
+		::	!done && X5 && !S5 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X4 && S4 -> done = true ;
+	::	else ->
+		if
+		::	!done && X4 && !S4 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X3 && S3 -> done = true ;
+	::	else ->
+		if
+		::	!done && X3 && !S3 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X2 && S2 -> done = true ;
+	::	else ->
+		if
+		::	!done && X2 && !S2 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X1 && S1 -> done = true ;
+	::	else ->
+		if
+		::	!done && X1 && !S1 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X0 && S0 -> done = true ;
+	::	else ->
+		if
+		::	!done && X0 && !S0 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	 le -> O17 = true;
+	::	else -> skip;
+	fi
+
+
+	X0 = O0;
+	X1 = O1;
+	X2 = O2;
+	X3 = O3;
+	X4 = O4;
+	X5 = O5;
+	X6 = O6;
+	X7 = O7;
+	X8 = O8;
+	X9 = O9;
+	X10 = O10;
+	X11 = O11;
+	X12 = O12;
+	X13 = O13;
+	X14 = O14;
+	X15 = O15;
+	X16 = true;
+	X17 = O17;
+	X18 = O18;
+	X19 = O19;
+	X20 = O20;
+	X21 = O21;
+	X22 = O22;
+	X23 = O23;
+	X24 = O24;
+	X25 = O25;
+	X26 = O26;
+	X27 = O27;
+	X28 = O28;
+	X29 = O29;
+	X30 = O30;
+	X31 = O31;
+
+	le = true;
+	done = false;
+
+	if
+	::	!done && !X31 && S31 -> done = true ;
+	::	else ->
+		if
+		::	!done && X31 && !S31 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X30 && S30 -> done = true ;
+	::	else ->
+		if
+		::	!done && X30 && !S30 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X29 && S29 -> done = true ;
+	::	else ->
+		if
+		::	!done && X29 && !S29 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X28 && S28 -> done = true ;
+	::	else ->
+		if
+		::	!done && X28 && !S28 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X27 && S27 -> done = true ;
+	::	else ->
+		if
+		::	!done && X27 && !S27 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X26 && S26 -> done = true ;
+	::	else ->
+		if
+		::	!done && X26 && !S26 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X25 && S25 -> done = true ;
+	::	else ->
+		if
+		::	!done && X25 && !S25 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X24 && S24 -> done = true ;
+	::	else ->
+		if
+		::	!done && X24 && !S24 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X23 && S23 -> done = true ;
+	::	else ->
+		if
+		::	!done && X23 && !S23 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X22 && S22 -> done = true ;
+	::	else ->
+		if
+		::	!done && X22 && !S22 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X21 && S21 -> done = true ;
+	::	else ->
+		if
+		::	!done && X21 && !S21 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X20 && S20 -> done = true ;
+	::	else ->
+		if
+		::	!done && X20 && !S20 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X19 && S19 -> done = true ;
+	::	else ->
+		if
+		::	!done && X19 && !S19 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X18 && S18 -> done = true ;
+	::	else ->
+		if
+		::	!done && X18 && !S18 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X17 && S17 -> done = true ;
+	::	else ->
+		if
+		::	!done && X17 && !S17 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X16 && S16 -> done = true ;
+	::	else ->
+		if
+		::	!done && X16 && !S16 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X15 && S15 -> done = true ;
+	::	else ->
+		if
+		::	!done && X15 && !S15 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X14 && S14 -> done = true ;
+	::	else ->
+		if
+		::	!done && X14 && !S14 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X13 && S13 -> done = true ;
+	::	else ->
+		if
+		::	!done && X13 && !S13 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X12 && S12 -> done = true ;
+	::	else ->
+		if
+		::	!done && X12 && !S12 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X11 && S11 -> done = true ;
+	::	else ->
+		if
+		::	!done && X11 && !S11 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X10 && S10 -> done = true ;
+	::	else ->
+		if
+		::	!done && X10 && !S10 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X9 && S9 -> done = true ;
+	::	else ->
+		if
+		::	!done && X9 && !S9 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X8 && S8 -> done = true ;
+	::	else ->
+		if
+		::	!done && X8 && !S8 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X7 && S7 -> done = true ;
+	::	else ->
+		if
+		::	!done && X7 && !S7 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X6 && S6 -> done = true ;
+	::	else ->
+		if
+		::	!done && X6 && !S6 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X5 && S5 -> done = true ;
+	::	else ->
+		if
+		::	!done && X5 && !S5 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X4 && S4 -> done = true ;
+	::	else ->
+		if
+		::	!done && X4 && !S4 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X3 && S3 -> done = true ;
+	::	else ->
+		if
+		::	!done && X3 && !S3 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X2 && S2 -> done = true ;
+	::	else ->
+		if
+		::	!done && X2 && !S2 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X1 && S1 -> done = true ;
+	::	else ->
+		if
+		::	!done && X1 && !S1 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	!done && !X0 && S0 -> done = true ;
+	::	else ->
+		if
+		::	!done && X0 && !S0 -> done = true; le = false;
+		::	else -> skip;
+		fi
+	fi
+
+	if
+	::	 le -> O16 = true;
+	::	else -> skip;
+	fi
+
+
+	S0 = false;
+	S1 = false;
+	S2 = false;
+	S3 = false;
+	S4 = false;
+	S5 = false;
+	S6 = false;
+	S7 = false;
+	S8 = false;
+	S9 = false;
+	S10 = false;
+	S11 = false;
+	S12 = false;
+	S13 = false;
+	S14 = false;
+	S15 = false;
+	S16 = false;
+	S17 = false;
+	S18 = false;
+	S19 = false;
+	S20 = false;
+	S21 = false;
+	S22 = false;
+	S23 = false;
+	S24 = false;
+	S25 = false;
+	S26 = false;
+	S27 = false;
+	S28 = false;
+	S29 = false;
+	S30 = false;
+	S31 = false;
+
+	X0 = false;
+	X1 = false;
+	X2 = false;
+	X3 = false;
+	X4 = false;
+	X5 = false;
+	X6 = false;
+	X7 = false;
+	X8 = false;
+	X9 = false;
+	X10 = false;
+	X11 = false;
+	X12 = false;
+	X13 = false;
+	X14 = false;
+	X15 = false;
+	X16 = false;
+	X17 = false;
+	X18 = false;
+	X19 = false;
+	X20 = false;
+	X21 = false;
+	X22 = false;
+	X23 = false;
+	X24 = false;
+	X25 = false;
+	X26 = false;
+	X27 = false;
+	X28 = false;
+	X29 = false;
+	X30 = false;
+	X31 = false;
+}

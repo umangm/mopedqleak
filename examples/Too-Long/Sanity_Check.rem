@@ -1,0 +1,44 @@
+//if (S < 16)
+//O = base + S;
+//else
+//O = base;
+
+//************Min-Entropy************
+
+//Termination after 3 iterations.
+//MinEntropy = 4
+//21217.865527 milliseconds elapsed
+
+//(21142.556885 + 21131.986084 + 21237.380859 + 21146.330811 + 21431.072998)/5.0 = 21217.865527399998
+
+//************************************
+
+//************Shannon-Entropy************
+
+//Termination after 3 iterations.
+//Shannon Entropy = 0.00752672
+//21210.891357 milliseconds elapsed
+
+//(21169.794922 + 21172.968994 + 21206.475098 + 21091.890869 + 21413.326904)/5.0 = 21210.891357399996
+
+//************************************
+
+define N 15
+
+define DEFAULT_INT_BITS N
+
+unsigned int S;
+
+module void main(){
+	//unsigned int base;
+	//base = 400; //some random number
+	//O = 0;
+	if
+	::	S < 16	-> S = 400 + S;
+	::	else -> S = 400;
+	fi
+	//S = 0;
+	//base = 0;
+}
+
+

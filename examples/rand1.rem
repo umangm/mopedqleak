@@ -1,0 +1,54 @@
+
+//Termination after 3 iterations.
+//MinEntropy = 3.32193
+//51.1129553333 milliseconds elapsed
+//(52.070068+50.847900+50.420898)/3=51.1129553333
+//Shannon Entropy = 2.6355e-07
+//54.185059 milliseconds elapsed
+//(54.185059+53.312988+53.888184)/3=53.7954103333
+
+define N 30
+define DEFAULT_INT_BITS N
+unsigned int S,O;
+module void main(){
+O=0;
+O= 478086878;
+if
+:: (S==396093295)-> O=396093295;
+:: else -> skip;
+fi
+if
+:: (S==1014453592)-> O=1014453592;
+:: else -> skip;
+fi
+if
+:: (S==1048847211)-> O=1048847211;
+:: else -> skip;
+fi
+if
+:: (S==355558877)-> O=355558877;
+:: else -> skip;
+fi
+if
+:: (S==504806365)-> O=504806365;
+:: else -> skip;
+fi
+if
+:: (S==646429081)-> O=646429081;
+:: else -> skip;
+fi
+if
+:: (S==413802597)-> O=413802597;
+:: else -> skip;
+fi
+if
+:: (S==154465373)-> O=154465373;
+:: else -> skip;
+fi
+if
+:: (S==865536611)-> O=865536611;
+:: else -> skip;
+fi
+S=0;
+}
+

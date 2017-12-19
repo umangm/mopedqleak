@@ -1,0 +1,43 @@
+//O = 0;
+//while(S >= 5) {
+//S = S - 5;
+//O = O + 1;
+//}
+
+//************Min-Entropy************
+
+//Termination after 9 iterations.
+//MinEntropy = 2
+//8.7268554 milliseconds elapsed
+
+//(9.802002  + 8.090088 + 8.051025 + 9.041992 + 8.649170)/5.0 = 8.7268554
+
+//************************************
+
+//************Shannon-Entropy************
+
+//Termination after 9 iterations.
+//Shannon Entropy = 2
+//8.1871582 milliseconds elapsed
+
+//(8.571045 + 8.206787 + 8.047119 + 8.036865 + 8.073975 )/5.0 = 8.1871582
+
+//************************************
+
+define N 5
+
+define DEFAULT_INT_BITS N
+
+unsigned int  S,O;
+bool out_of_domain;
+
+module void main(){
+	O = 0;
+        if 
+        :: (S>= 20) -> out_of_domain = true;
+        :: else->	 do
+	                 :: S >= 5 -> S = S - 5; O = O + 1;
+	                 od;
+        fi
+	S = 0;
+}

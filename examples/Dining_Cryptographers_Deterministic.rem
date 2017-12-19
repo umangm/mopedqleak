@@ -1,0 +1,37 @@
+//Dining cryptographers problem
+
+//************Min-Entropy************
+
+//Termination after 3 iterations.
+//MinEntropy = 1
+// 4.7312012 milliseconds elapsed
+
+//(5.055176 +4.718994 +4.718994 +4.595947 +4.566895)/5 =4.7312012
+
+//************************************
+
+//************Shannon-Entropy************
+
+//Termination after 3 iterations.
+//Shannon Entropy = 0.811278
+//  5.2605956 milliseconds elapsed
+
+//(6.418945 +5.051025 +5.302979 +4.820068 +4.709961)/5.0 = 
+
+//**************************************
+
+bool paid[2], did_diners_pay;
+//00->NSA, 01-> Crypto1, 10 -> Crypto2, 11 -> Crypto3 //MSB is the 1st bit, LSB is the 0th bit
+
+module void main(){
+   
+    did_diners_pay = false;
+    
+    if
+    ::  paid[0]==false && paid[1]==false -> did_diners_pay = false;
+    ::  else -> did_diners_pay = true;
+    fi;
+   
+    paid[0] = false;
+    paid[1] = false;
+}

@@ -1,0 +1,404 @@
+Last login: Wed Jun 28 11:04:10 on ttys001
+wirelessprv-10-193-245-12:~ umang$ ssh umathur3@taub.campuscluster.illinois.edu
+Last login: Wed Jun 28 11:13:52 2017 from s-26-232.flex.volo.net
+************************************************************************
+
+          Welcome to Campus Cluster @ University of Illinois
+
+                Unauthorized use/access is prohibited
+
+------------------------------------------------------------------------
+
+             This is the login node to the CampusCluster
+
+------------------------------------------------------------------------
+
+  Please send questions or concerns to help@campuscluster.illinois.edu
+
+************************************************************************
+
+User Forum:
+    https://campuscluster.illinois.edu/forum/
+
+    The forum is set up for the users and all users are welcome to
+    ask questions or contribute knowledge.  Admins will periodically
+    read the forums and answer questions posed, if it is appropriate.
+
+User Guide:
+    https://campuscluster.illinois.edu/user_info/doc/
+
+Beginner's Guide:
+    https://campuscluster.illinois.edu/user_info/doc/beginner.html
+
+
+** WARNING **  ** WARNING **  ** WARNING **  ** WARNING **  ** WARNING **
+
+Quotas on user home directories will be enforced starting Monday December 9,
+2013 at 7 a.m. CT. The soft limit is 2 GB and the hard limit is 4 GB. Once
+quotas are enforced, if the amount of data in your home directory is over
+the soft limit of 2 GB but under the hard limit of 4 GB, there is a grace
+period of 7 days to get under the soft limit. When the grace period expires,
+you will not be able to write new files or update any current files until
+you reduce the amount of data to below 2 GB.
+
+For those users over the hard limit that also have jobs running out of a
+home directory, those jobs are liable to crash.
+
+------------------------------------------------------------------------
+
+As of Friday May 16, 2014 we have implemented a script that will
+automatically kill processes on the login nodes that use more than
+30 minutes of CPU time or are running on more than 4 processors.
+
+** WARNING **  ** WARNING **  ** WARNING **  ** WARNING **  ** WARNING **
+
+********************************************************************
+
+
+
+#########################################################################
+#                                                                       #
+# On June 1, 2017, oldest parts of the campus cluster (the Taub cluster)# 
+# will enter the retirement phase as described in the Taub SLD and      #
+# compute node access to Taub nodes will be disabled at that time.      #
+# The ICCP will provide a two (2) month grace period of access to the   #
+# system so as to enable investors time to move any data on the Taub    #
+# system to another location. Any data not removed will be deleted at   #
+# the end of this grace period.                                         #
+#                                                                       #
+# On August 1, 2017, investors who no longer have active investments    #
+# will lose the ability to log in to the campus cluster.                #
+#                                                                       #
+# NOTE: This does not impact ICCP equipment purchased more recently as  #
+# part of the Golub cluster. Questions about whether or not Taub’s      #
+# retirement will affect your access to the campus cluster should be    #
+# directed to your investor or tech rep.                                #
+#                                                                       #
+#########################################################################
+
+
+
+
++
+
+Directories quota usage for user umathur3:
+
+-------------------------------------------------------------------------------------
+|      Fileset       |  Used   |  Soft   |  Hard   |   Used   |   Soft   |   Hard   |
+|                    |  Block  |  Quota  |  Limit  |   File   |   Quota  |   Limit  |
+-------------------------------------------------------------------------------------
+| home               | 41.12M  | 2G      | 4G      | 261      | 0        | 0        |
+| cse-shared         | 0       | 1.465T  | 1.953T  | 0        | 0        | 0        |
+| stat               | 0       | 45G     | 50G     | 0        | 0        | 0        |
+-------------------------------------------------------------------------------------
+
++
+
+[umathur3@taubh2 ~]$ cd bin/Connection to taub.campuscluster.illinois.edu closed by remote host.
+Connection to taub.campuscluster.illinois.edu closed.
+wirelessprv-10-193-245-12:~ umang$ ssh umathur3@taub.campuscluster.illinois.edu
+Last login: Wed Jun 28 08:46:34 2017 from s-26-232.flex.volo.net
+************************************************************************
+
+          Welcome to Campus Cluster @ University of Illinois
+
+                Unauthorized use/access is prohibited
+
+------------------------------------------------------------------------
+
+             This is the login node to the CampusCluster
+
+------------------------------------------------------------------------
+
+  Please send questions or concerns to help@campuscluster.illinois.edu
+
+************************************************************************
+
+User Forum:
+    https://campuscluster.illinois.edu/forum/
+
+    The forum is set up for the users and all users are welcome to
+    ask questions or contribute knowledge.  Admins will periodically
+    read the forums and answer questions posed, if it is appropriate.
+
+User Guide:
+    https://campuscluster.illinois.edu/user_info/doc/
+
+Beginner's Guide:
+    https://campuscluster.illinois.edu/user_info/doc/beginner.html
+
+
+** WARNING **  ** WARNING **  ** WARNING **  ** WARNING **  ** WARNING **
+
+Quotas on user home directories will be enforced starting Monday December 9,
+2013 at 7 a.m. CT. The soft limit is 2 GB and the hard limit is 4 GB. Once
+quotas are enforced, if the amount of data in your home directory is over
+the soft limit of 2 GB but under the hard limit of 4 GB, there is a grace
+period of 7 days to get under the soft limit. When the grace period expires,
+you will not be able to write new files or update any current files until
+you reduce the amount of data to below 2 GB.
+
+For those users over the hard limit that also have jobs running out of a
+home directory, those jobs are liable to crash.
+
+------------------------------------------------------------------------
+
+As of Friday May 16, 2014 we have implemented a script that will
+automatically kill processes on the login nodes that use more than
+30 minutes of CPU time or are running on more than 4 processors.
+
+** WARNING **  ** WARNING **  ** WARNING **  ** WARNING **  ** WARNING **
+
+********************************************************************
+
+
+
+#########################################################################
+#                                                                       #
+# On June 1, 2017, oldest parts of the campus cluster (the Taub cluster)# 
+# will enter the retirement phase as described in the Taub SLD and      #
+# compute node access to Taub nodes will be disabled at that time.      #
+# The ICCP will provide a two (2) month grace period of access to the   #
+# system so as to enable investors time to move any data on the Taub    #
+# system to another location. Any data not removed will be deleted at   #
+# the end of this grace period.                                         #
+#                                                                       #
+# On August 1, 2017, investors who no longer have active investments    #
+# will lose the ability to log in to the campus cluster.                #
+#                                                                       #
+# NOTE: This does not impact ICCP equipment purchased more recently as  #
+# part of the Golub cluster. Questions about whether or not Taub’s      #
+# retirement will affect your access to the campus cluster should be    #
+# directed to your investor or tech rep.                                #
+#                                                                       #
+#########################################################################
+
+
+
+
++
+
+Directories quota usage for user umathur3:
+
+-------------------------------------------------------------------------------------
+|      Fileset       |  Used   |  Soft   |  Hard   |   Used   |   Soft   |   Hard   |
+|                    |  Block  |  Quota  |  Limit  |   File   |   Quota  |   Limit  |
+-------------------------------------------------------------------------------------
+| home               | 41.41M  | 2G      | 4G      | 262      | 0        | 0        |
+| cse-shared         | 0       | 1.465T  | 1.953T  | 0        | 0        | 0        |
+| stat               | 0       | 45G     | 50G     | 0        | 0        | 0        |
+-------------------------------------------------------------------------------------
+
++
+
+[umathur3@taubh1 ~]$ ls
+RV-Predict  config.pbs  ex.pbs  module_load.sh  scratch  sequitur  sequitur.tgz  testing  tracer  ziptrack
+[umathur3@taubh1 ~]$ ls
+RV-Predict  config.pbs  ex.pbs  module_load.sh  scratch  sequitur  sequitur.tgz  testing  tracer  ziptrack
+[umathur3@taubh1 ~]$ ls ziptrack/
+lib  ziptrack.jar
+[umathur3@taubh1 ~]$ ls testing/ 
+scripts
+[umathur3@taubh1 ~]$ ls testing/scripts/
+compressTraces.py  getTraces.py  util.py  ziptrack.jar
+[umathur3@taubh1 ~]$ ls
+RV-Predict  config.pbs  ex.pbs  module_load.sh  scratch  sequitur  sequitur.tgz  testing  tracer  ziptrack
+[umathur3@taubh1 ~]$ cd testing/
+[umathur3@taubh1 testing]$ ls
+scripts
+[umathur3@taubh1 testing]$ cd scripts/
+[umathur3@taubh1 scripts]$ ls
+compressTraces.py  getTraces.py  util.py  zipHBSets.py  zipHBZDD.py  zipLockSet.py  ziptrack.jar
+[umathur3@taubh1 scripts]$ mv ziptrack.jar ~/ziptrack/
+lib/          ziptrack.jar  
+[umathur3@taubh1 scripts]$ mv ziptrack.jar ~/ziptrack/
+[umathur3@taubh1 scripts]$ 
+[umathur3@taubh1 scripts]$ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[umathur3@taubh1 scripts]$ ls
+compressTraces.py  getTraces.py  util.py  zipHBSets.py  zipHBZDD.py  zipLockSet.py
+[umathur3@taubh1 scripts]$ cd ..
+[umathur3@taubh1 testing]$ ls
+scripts
+[umathur3@taubh1 testing]$ cd scripts/
+[umathur3@taubh1 scripts]$ ls
+compressTraces.py  getTraces.py  util.py  zipHBSets.py  zipHBZDD.py  zipLockSet.py
+[umathur3@taubh1 scripts]$ vi util.py 
+[umathur3@taubh1 scripts]$ cd scratch
+-bash: cd: scratch: No such file or directory
+[umathur3@taubh1 scripts]$ cd ~/scratch/
+[umathur3@taubh1 scratch]$ pwd
+/home/umathur3/scratch
+[umathur3@taubh1 scratch]$ ls
+Nov-11-2016  Nov-5-2016  oldNov11  oldNov5
+[umathur3@taubh1 scratch]$ cd -
+/home/umathur3/testing/scripts
+[umathur3@taubh1 scripts]$ vi util.py 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  1 #! /usr/bin/env python
+  2 
+  3 import sys
+  4 import os
+  5 import time
+  6 from subprocess import call
+  7 import argparse
+  8 import ast
+  9 
+ 10 traces = ['account', 'airlinetickets', 'array', 'boundedbuffer', 'bufwriter', 'bubblesort', 'critical', 'mergesort', 'pingpong']
+ 11 traces = traces + ['moldyn', 'montecarlo', 'raytracer']
+ 12 traces = traces + ['derby', 'ftpserver', 'jigsaw', 'xalan', 'lusearch', 'eclipse']
+ 13 
+ 14 common_pre = "/home/umathur3/scratch"
+ 15 
+ 16 testFolders = ['Nov-11-2016/', 'Nov-5-2016/']
+ 17 testFolders = [(common_pre) + s for s in testFolders]
+ 18 
+ 19 # log_dirs = [(tf + 'bin/') for tf in testFolders]
+ 20 # analysis_dirs = []
+ 21 
+ 22 
+ 23 
+ 24 print_class_names = {'Print':'all', 'SharedPrint':'shared'}
+ 25 
+ 26 ziptrack_class_names = {'ziptrack.HBSets':'hbsets', 'ziptrack.HBZDD':'hbzdd', 'ziptrack.LockSet':'lockset'}
+ 27 
+ 28 javaMemory = 4000
+ 29 sequitur_memory = 1000
+ 30 
+ 31 def get_time_command(timfile):
+ 32     # return ['/usr/bin/time', '-v', '-o', timfile]
+ 33     return ['time']
+ 34 
+ 35 tracer_classpath = "/Users/umang/Repositories/wcp/testing/tracer.jar:/Users/umang/Repositories/wcp/tracer/lib/lz4-1.3-SNAPSHOT.jar:/Users/umang/Repositories/wcp/tracer/lib/commons-cli-1.3.1.jar"
+ 36 ziptrack_classpath = "/Users/umang/Repositories/ziptrack/testing/ziptrack.jar:/Users/umang/Repositories/ziptrack/tool/lib/*"
+ 37 sequitur_command = '/Users/umang/Repositories/compressedtraces/sequitur/sequitur'
+ 38 
+ 39 def make_dir(path):
+ 40     if not os.path.exists(path):
+ 41         os.makedirs(path)
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+-- INSERT --                                                                                                                                                                              14,38         All

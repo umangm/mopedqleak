@@ -1,0 +1,68 @@
+//Dining cryptographers problem [Public Announcements] (Biased)
+
+//************Min-Entropy************
+
+//Termination after 3 iterations.
+//MinEntropy = 1.32193
+//6.9844236 milliseconds elapsed
+
+//(7.053955 + 6.939941+6.872070+6.840088+7.216064)/5=6.9844236
+
+//************************************
+
+//************Shannon-Entropy************
+
+//Termination after 3 iterations.
+//Shannon Entropy = 0.889093
+//7.506836 milliseconds elapsed
+
+//(7.919922+6.980957+6.967773+6.907959+6.970947)/5= 7.1495116
+
+//**************************************
+
+bool paid[2], did_diners_pay, announce1, announce2, announce3;
+//00->NSA, 01-> Crypto1, 10 -> Crypto2, 11 -> Crypto3 //MSB is the 1st bit, LSB is the 0th bit
+
+module void main(){
+    bool shared12, shared23, shared31;
+    
+    did_diners_pay = false;
+    announce1 = false;
+    announce2 = false;
+    announce3 = false;
+    
+    pchoice
+    :: 0.75 -> shared12 = true;
+    :: 0.25 -> shared12 = false;
+    choicep;
+    
+    pchoice
+    :: 0.75 -> shared23 = true;
+    :: 0.25 -> shared23 = false;
+    choicep;
+    
+    pchoice
+    :: 0.75 -> shared31 = true;
+    :: 0.25 -> shared31 = false;
+    choicep;
+    
+    if
+    ::  paid[0]==true && paid[1]==false -> announce1 = !(shared12^^shared31); //Crypto1 paid
+    ::  else -> announce1 = shared12^^shared31;
+    fi;
+    
+   if
+    ::  paid[0]==false && paid[1]==true -> announce2 = !(shared23^^shared12); //Crypto2 paid
+    ::  else -> announce2 = shared23^^shared12;
+    fi;
+    
+    if
+    ::  paid[0]==true && paid[1]==true -> announce3 = !(shared31^^shared23); //Crypto3 paid
+    ::  else -> announce3 = shared31^^shared23;
+    fi;
+    
+    did_diners_pay = (announce1^^announce2)^^announce3;
+    
+    paid[0] = false;
+    paid[1] = false;
+}

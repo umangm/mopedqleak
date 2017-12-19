@@ -1,0 +1,193 @@
+//if (S < 16)
+//O = base + S;
+//else
+//O = base;
+
+//************Min-Entropy************
+
+//Termination after 3 iterations.
+//MinEntropy = 4
+//57.2710936 milliseconds elapsed
+
+//(57.108154+ 56.488037+ 55.915039 + 59.944092+ 56.900146)/5= 57.2710936
+
+
+//************************************
+
+//************Shannon-Entropy************
+
+//Termination after 3 iterations.
+//Shannon Entropy = 1.16797e-07
+//30.329394 milliseconds elapsed
+
+// (59.641113+58.482910+63.779785+58.647949+ 57.042969)/5=59.5189452
+//************************************
+
+
+bool S31,O31;
+bool S30,O30;
+bool S29,O29;
+bool S28,O28;
+bool S27,O27;
+bool S26,O26;
+bool S25,O25;
+bool S24,O24;
+bool S23,O23;
+bool S22,O22;
+bool S21,O21;
+bool S20,O20;
+bool S19,O19;
+bool S18,O18;
+bool S17,O17;
+bool S16,O16;
+bool S15,O15;
+bool S14,O14;
+bool S13,O13;
+bool S12,O12;
+bool S11,O11;
+bool S10,O10;
+bool S9,O9;
+bool S8,O8;
+bool S7,O7;
+bool S6,O6;
+bool S5,O5;
+bool S4,O4;
+bool S3,O3;
+bool S2,O2;
+bool S1,O1;
+bool S0,O0;
+module void main(){
+	if
+	::	S4 == false && 
+		S5 == false && 
+		S6 == false && 
+		S7 == false && 
+		S8 == false && 
+		S9 == false && 
+		S10 == false && 
+		S11 == false && 
+		S12 == false && 
+		S13 == false && 
+		S14 == false && 
+		S15 == false && 
+		S16 == false && 
+		S17 == false && 
+		S18 == false && 
+		S19 == false && 
+		S20 == false && 
+		S21 == false && 
+		S22 == false && 
+		S23 == false && 
+		S24 == false && 
+		S25 == false && 
+		S26 == false && 
+		S27 == false && 
+		S28 == false && 
+		S29 == false && 
+		S30 == false && 
+		S31 == false  -> 
+			O0 = S0;
+			O1 = S1;
+			O2 = S2;
+			O3 = S3;
+			O4 = S4;
+			O5 = S5;
+			O6 = S6;
+			O7 = S7;
+			O8 = S8;
+			O9 = S9;
+			O10 = S10;
+			O11 = S11;
+			O12 = S12;
+			O13 = S13;
+			O14 = S14;
+			O15 = S15;
+			O16 = S16;
+			O17 = S17;
+			O18 = S18;
+			O19 = S19;
+			O20 = S20;
+			O21 = S21;
+			O22 = S22;
+			O23 = S23;
+			O24 = S24;
+			O25 = S25;
+			O26 = S26;
+			O27 = S27;
+			O28 = S28;
+			O29 = S29;
+			O30 = S30;
+			O31 = S31;
+
+	::	else -> O0 = false;
+				O1 = false;
+				O2 = false;
+				O3 = false;
+				O4 = false;
+				O5 = false;
+				O6 = false;
+				O7 = false;
+				O8 = false;
+				O9 = false;
+				O10 = false;
+				O11 = false;
+				O12 = false;
+				O13 = false;
+				O14 = false;
+				O15 = false;
+				O16 = false;
+				O17 = false;
+				O18 = false;
+				O19 = false;
+				O20 = false;
+				O21 = false;
+				O22 = false;
+				O23 = false;
+				O24 = false;
+				O25 = false;
+				O26 = false;
+				O27 = false;
+				O28 = false;
+				O29 = false;
+				O30 = false;
+				O31 = false;
+	fi
+	
+	S0 = false;
+	S1 = false;
+	S2 = false;
+	S3 = false;
+	S4 = false;
+	S5 = false;
+	S6 = false;
+	S7 = false;
+	S8 = false;
+	S9 = false;
+	S10 = false;
+	S11 = false;
+	S12 = false;
+	S13 = false;
+	S14 = false;
+	S15 = false;
+	S16 = false;
+	S17 = false;
+	S18 = false;
+	S19 = false;
+	S20 = false;
+	S21 = false;
+	S22 = false;
+	S23 = false;
+	S24 = false;
+	S25 = false;
+	S26 = false;
+	S27 = false;
+	S28 = false;
+	S29 = false;
+	S30 = false;
+	S31 = false;
+
+
+
+}
+
+

@@ -1,0 +1,29 @@
+//************Min-Entropy************
+
+//Termination after 2 iterations.
+//MinEntropy = 0
+//7.253320 milliseconds elapsed
+
+//(7.339111 + 7.250977 + 7.204834 + 7.258789 + 7.212891)/5.0 = 7.2533204
+
+//************************************
+
+//************Shannon-Entropy************
+
+//Termination after 2 iterations.
+//Shannon Entropy = 0
+//7.303418 milliseconds elapsed
+
+//(7.194824 + 7.455078 + 7.330078 + 7.270020 + 7.267090)/5.0 = 7.303417999999999
+
+//************************************
+
+bool S[32], O[32];
+
+module void main(){
+	do
+	::	true -> skip;
+	od
+}
+
+

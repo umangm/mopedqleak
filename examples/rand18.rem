@@ -1,0 +1,44 @@
+define N 30
+define DEFAULT_INT_BITS N
+unsigned int S,O;
+module void main(){
+O=0;
+O= 302849046;
+if
+:: (S==551253972)-> O=551253972;
+:: else -> skip;
+fi
+if
+:: (S==254155942)-> O=254155942;
+:: else -> skip;
+fi
+if
+:: (S==662674017)-> O=662674017;
+:: else -> skip;
+fi
+if
+:: (S==254350616)-> O=254350616;
+:: else -> skip;
+fi
+if
+:: (S==81785343)-> O=81785343;
+:: else -> skip;
+fi
+if
+:: (S==428624178)-> O=428624178;
+:: else -> skip;
+fi
+if
+:: (S==709625567)-> O=709625567;
+:: else -> skip;
+fi
+if
+:: (S==509607387)-> O=509607387;
+:: else -> skip;
+fi
+if
+:: (S==586066105)-> O=586066105;
+:: else -> skip;
+fi
+S=0;
+}

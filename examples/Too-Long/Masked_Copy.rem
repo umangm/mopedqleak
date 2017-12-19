@@ -1,0 +1,51 @@
+//O = S & 0xffff0000;
+
+//pre-star
+//Termination after 3 iterations.
+//MinEntropy = 16
+
+//real	0m30.893s
+//user	0m30.679s
+//sys	0m0.093s
+
+//post-star
+//Takes a lot of time (>3 minutes)
+
+bool S[32], O[32];
+
+module void main(){
+	//Not initializing O to 0 because there is no need.
+	O[31] = S[31]; S[31] = false;
+	O[30] = S[30]; S[30] = false;
+	O[29] = S[29]; S[29] = false;
+	O[28] = S[28]; S[28] = false;
+	O[27] = S[27]; S[27] = false;
+	O[26] = S[26]; S[26] = false;
+	O[25] = S[25]; S[25] = false;
+	O[24] = S[24]; S[24] = false;
+	O[23] = S[23]; S[23] = false;
+	O[22] = S[22]; S[22] = false;
+	O[21] = S[21]; S[21] = false;
+	O[20] = S[20]; S[20] = false;
+	O[19] = S[19]; S[19] = false;
+	O[18] = S[18]; S[18] = false;
+	O[17] = S[17]; S[17] = false;
+	O[16] = S[16]; S[16] = false;
+	O[15] = false; S[15] = false;
+	O[14] = false; S[14] = false;
+	O[13] = false; S[13] = false;
+	O[12] = false; S[12] = false;
+	O[11] = false; S[11] = false;
+	O[10] = false; S[10] = false;
+	O[9] = false; S[9] = false;
+	O[8] = false; S[8] = false;
+	O[7] = false; S[7] = false;
+	O[6] = false; S[6] = false;
+	O[5] = false; S[5] = false;
+	O[4] = false; S[4] = false;
+	O[3] = false; S[3] = false;
+	O[2] = false; S[2] = false;
+	O[1] = false; S[1] = false;
+	O[0] = false; S[0] = false;
+}
+

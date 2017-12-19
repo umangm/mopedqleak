@@ -1,0 +1,172 @@
+//************Min-Entropy************
+
+//Termination after 3 iterations.
+//MinEntropy = 2
+//38.991846 milliseconds elapsed
+
+//(39.709961 + 40.064209 + 35.290039 + 41.791016 + 38.104004)/5.0 = 38.99184580000001
+
+//************************************
+
+//************Shannon-Entropy************
+
+//Termination after 3 iterations.
+//Shannon Entropy = 1.81128
+//38.573535 milliseconds elapsed
+
+//(37.435059 + 40.007812 + 32.542969 + 39.899902 + 42.981934)/5.0 = 38.573535199999995
+
+//************************************
+
+bool S[32],O[32];
+
+
+module void main()
+{
+
+bool carry;
+
+O[0]=false;
+O[1]=false;
+O[2]=false;
+O[3]=false;
+O[4]=false;
+O[6]=false;
+O[7]=false;
+O[8]=false;
+O[9]=false;
+O[10]=false;
+O[11]=false;
+O[12]=false;
+O[13]=false;
+O[14]=false;
+O[15]=false;
+O[16]=false;
+O[17]=false;
+O[18]=false;
+O[19]=false;
+O[20]=false;
+O[21]=false;
+O[22]=false;
+O[23]=false;
+O[24]=false;
+O[25]=false;
+O[26]=false;
+O[27]=false;
+O[28]=false;
+O[29]=false;
+O[30]=false;
+O[31]=false;
+
+
+
+
+carry= S[0] && S[1];
+S[0] = S[0] ^^ S[1];
+S[1] = carry;
+
+carry= S[2] && S[3];
+S[2] = S[2] ^^ S[3];
+S[3] = carry;
+
+carry= S[4] && S[5];
+S[4] = S[4] ^^ S[5];
+S[5] = carry;
+
+carry= S[6] && S[7];
+S[6] = S[6] ^^ S[7];
+S[7] = carry;
+
+carry= S[8] && S[9];
+S[8] = S[8] ^^ S[9];
+S[9] = carry;
+
+carry= S[10] && S[11];
+S[10] = S[10] ^^ S[10];
+S[11] = carry;
+
+carry= S[12] && S[13];
+S[12] = S[12] ^^ S[13];
+S[13] = carry;
+
+
+carry=  S[14] && S[15];
+S[14] = S[14] ^^ S[15];
+S[15] = carry;
+
+
+carry= S[16] && S[17];
+S[16] = S[16]^^ S[17];
+S[17] = carry;
+
+carry= S[18] && S[19];
+S[18] = S[19] ^^ S[19];
+S[19] = carry;
+
+carry= S[20] && S[21];
+S[20] = S[20] ^^ S[21];
+S[21] = carry;
+
+carry= S[22] && S[23];
+S[22] = S[22] ^^ S[23];
+S[23] = carry;
+
+carry= S[24] && S[25];
+S[24] = S[24] ^^ S[25];
+S[25] = carry;
+
+carry= S[26] && S[27];
+S[26] = S[26] ^^ S[27];
+S[27] = carry;
+
+carry= S[28] && S[29];
+S[28] = S[28] ^^ S[29];
+S[29] = carry;
+
+carry= S[30] && S[31];
+S[30] = S[30] ^^ S[31];
+S[31] = carry;
+
+
+S[0]=false;
+S[1]=false;
+S[2]=false;
+S[3]=false;
+S[4]=false;
+S[6]=false;
+S[7]=false;
+S[8]=false;
+S[9]=false;
+S[10]=false;
+S[11]=false;
+S[12]=false;
+S[13]=false;
+S[14]=false;
+S[15]=false;
+S[16]=false;
+S[17]=false;
+S[18]=false;
+S[19]=false;
+S[20]=false;
+S[21]=false;
+S[22]=false;
+S[23]=false;
+S[24]=false;
+S[25]=false;
+S[26]=false;
+S[27]=false;
+S[28]=false;
+S[29]=false;
+S[30]=false;
+S[31]=false;
+
+
+
+//S =  + ((S>>1) & 1431655765);
+//S = (S & 0x33333333) + ((S>>2) & 0x33333333);
+//S = (S & 0x0f0f0f0f) + ((S>>4) & 0x0f0f0f0f);
+//S = (S & 0x00ff00ff) + ((S>>8) & 0x00ff00ff);
+//O = (S + (S>>16)) & 0xffff;
+
+}
+

@@ -1,0 +1,22 @@
+//*********** Modified 'do' statement *********************
+
+//This example illustrates the modified 'do' construct
+
+//*********************************************************
+
+bool a[2];
+
+module void main(){
+	do
+	::  a[0]==true && a[1]==false -> a[1] = a[0];
+	od
+	
+	//The following give a syntax error in Moped-QLeak :
+    
+    //do
+	//::  a[0]==true && a[1]==false -> a[1] = a[0];
+	//::  a[0]==true || a[1]==false -> a[1] = ! a[0];
+	//od
+}
+
+

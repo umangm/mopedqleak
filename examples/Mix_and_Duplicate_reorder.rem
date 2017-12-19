@@ -1,0 +1,130 @@
+//O = ((S >> 16) ^ S) & 0xffff;
+//O = O | O << 16;
+
+//************Min-Entropy************
+
+//Termination after 3 iterations.
+//MinEntropy = 16
+//40.85 milliseconds elapsed
+
+// (42.074951 + 41.766846 + 41.657959 + 40.438232 + 40.810059)/5.0 = 41.3496094
+
+//************************************
+
+//************Shannon-Entropy************
+
+//Termination after 3 iterations.
+//Shannon Entropy = 16
+//24.602002 milliseconds elapsed
+
+//(40.767090 + 41.989014 + 40.499023 + 41.083008 + 39.911865)/5.0 = 40.85
+
+//************************************
+
+
+bool S15, S31;
+bool O15, O31;
+bool S14, S30;
+bool O14, O30;
+bool S13, S29;
+bool O13, O29;
+bool S12, S28;
+bool O12, O28;
+bool S11, S27;
+bool O11, O27;
+bool S10, S26;
+bool O10, O26;
+bool S9, S25;
+bool O9, O25;
+bool S8, S24;
+bool O8, O24;
+bool S7, S23;
+bool O7, O23;
+bool S6, S22;
+bool O6, O22;
+bool S5, S21;
+bool O5, O21;
+bool S4, S20;
+bool O4, O20;
+bool S3, S19;
+bool O3, O19;
+bool S2, S18;
+bool O2, O18;
+bool S1, S17;
+bool O1, O17;
+bool S0, S16;
+bool O0, O16;
+
+
+module void main(){
+	O0 = S16 ^^ S0;
+	O1 = S17 ^^ S1;
+	O2 = S18 ^^ S2;
+	O3 = S19 ^^ S3;
+	O4 = S20 ^^ S4;
+	O5 = S21 ^^ S5;
+	O6 = S22 ^^ S6;
+	O7 = S23 ^^ S7;
+	O8 = S24 ^^ S8;
+	O9 = S25 ^^ S9;
+	O10 = S26 ^^ S10;
+	O11 = S27 ^^ S11;
+	O12 = S28 ^^ S12;
+	O13 = S29 ^^ S13;
+	O14 = S30 ^^ S14;
+	O15 = S31 ^^ S15;
+	
+	O16 = O0;
+	O17 = O1;
+	O18 = O2;
+	O19 = O3;
+	O20 = O4;
+	O21 = O5;
+	O22 = O6;
+	O23 = O7;
+	O24 = O8;
+	O25 = O9;
+	O26 = O10;
+	O27 = O11;
+	O28 = O12;
+	O29 = O13;
+	O30 = O14;
+	O31 = O15;
+	
+	S0 = false;
+	S1 = false;
+	S2 = false;
+	S3 = false;
+	S4 = false;
+	S5 = false;
+	S6 = false;
+	S7 = false;
+	S8 = false;
+	S9 = false;
+	S10 = false;
+	S11 = false;
+	S12 = false;
+	S13 = false;
+	S14 = false;
+	S15 = false;
+	S16 = false;
+	S17 = false;
+	S18 = false;
+	S19 = false;
+	S20 = false;
+	S21 = false;
+	S22 = false;
+	S23 = false;
+	S24 = false;
+	S25 = false;
+	S26 = false;
+	S27 = false;
+	S28 = false;
+	S29 = false;
+	S30 = false;
+	S31 = false;
+
+	
+}
+
+

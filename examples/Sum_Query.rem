@@ -1,0 +1,50 @@
+//O = S1;
+//O = O + S2;
+//O = O + S3;
+
+//************Min-Entropy************
+
+//Termination after 3 iterations.
+//MinEntropy = 4.80735
+// milliseconds elapsed
+
+//(33.996094+32.785889+33.302979+33.309082+33.217041)/5=33.322217
+
+//************************************
+
+//************Shannon-Entropy************
+
+//Termination after 3 iterations.
+//Shannon Entropy = 4.35132
+// milliseconds elapsed
+
+//(35.044922+33.867920+33.593018+33.31982+33.351074)/5= 33.8353508
+
+//************************************
+
+define N 5
+
+define DEFAULT_INT_BITS N
+
+bool out_of_domain;
+unsigned int S1, S2, S3,O;
+
+module void main(){
+     O=0;
+     if 
+     :: (S1>=10) || (S2>=10) || (S3>=10) -> out_of_domain =true;
+     :: else->O = S1;
+        O = O + S2;
+        O = O + S3;
+        S1 = 0;
+        S2 = 0;
+        S3 = 0;
+     fi
+
+//	O = S1;
+//	O = O + S2;
+//	O = O + S3;
+//	S1 = 0;
+//	S2 = 0;
+//	S3 = 0;
+}
