@@ -8,8 +8,8 @@
 #include <utility>
 #include <map>
 #include <set>
-#include <sys/time.h>  
-#include "../../cudd-2.5.0/include/cuddObj.hh"
+#include <sys/time.h> 
+#include "cudd.h" 
 
 using namespace std;
 

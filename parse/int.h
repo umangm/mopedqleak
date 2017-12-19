@@ -11,7 +11,7 @@
 
 #include<stdio.h>
 #include<stdlib.h>
-#include "../../cudd-2.5.0/cudd/cudd.h"
+#include "cudd.h"
 #include "intInt.h"
 
 typedef long wIdent;
