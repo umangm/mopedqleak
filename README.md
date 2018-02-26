@@ -13,6 +13,11 @@ make install
 cd .. #Return to the main directory
 ```
 The above set of commands have been tested for MacOS (x86_64 architecture).
+Linux users should include installed library path in '/etc/ld.so.conf'.
+In my case, the path is '/usr/local/lib/' and I added 'include /usr/local/lib/' to 'ld.so.conf'.
+
+
+
 
 Test if CUDD compiled correctly:
 ```
