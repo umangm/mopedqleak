@@ -85,7 +85,7 @@ double minEntropy(
 		cout<<"The first computed value is not a constant. Please check the inputs."<<endl;
 		cout<<"Printing tmp1...\n";
 		printADD (manager, tmp1, "tmp1-minentropy", "tmp1", 100);
-		return -1;
+		return -100;
 	}
 	
 	#ifdef ddb

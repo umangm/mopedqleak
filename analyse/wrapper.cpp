@@ -86,6 +86,8 @@ computed_pds wrap_and_compute(intPds* PDS, bool probReach, analysis_mode mode, c
 	strcpy(main, "main");
 	
 	program_variables = new DdNode*[3*gcount+3*lcount];
+
+	bdd_index_out_of_domain = bdd_index_out_of_domain + 3 * lcount;
 	
 	map<wIdent, intModule*> line_module_map = map_lines_to_modules(PDS);
 	
@@ -105,6 +107,7 @@ computed_pds wrap_and_compute(intPds* PDS, bool probReach, analysis_mode mode, c
 			cout<<wIdentString(v->name)<<" : ";
 			cout<<" ("<<v->name<<") "<<endl;
 			v = v->next;
+
 		}
 		cout<<endl;
 		m = m->next;
