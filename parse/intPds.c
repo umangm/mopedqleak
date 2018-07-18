@@ -18,17 +18,32 @@ static int intBitsInModule (intModule *module)
 	return module->numvars = index;
 }
 
+// static void intSetIndices (intModule *module)
+// {
+// 	intVariable *var;
+// 	int index = module->numvars;
+// 	for (var = module->vars; var; var = var->next)
+// 	{
+// 		index -= (var->type? var->type : 1) * (var->dim? var->dim : 1);
+// 		var->bddindex = index;
+// 		if(var->name == wIdentCreate("out_of_domain") && module->name == wIdentCreate("*")) {
+// 			bdd_index_out_of_domain = index;
+// 		}
+// 	}
+// }
+
 static void intSetIndices (intModule *module)
 {
 	intVariable *var;
-	int index = module->numvars;
+	int index = 0;
 	for (var = module->vars; var; var = var->next)
 	{
-		index -= (var->type? var->type : 1) * (var->dim? var->dim : 1);
 		var->bddindex = index;
 		if(var->name == wIdentCreate("out_of_domain") && module->name == wIdentCreate("*")) {
 			bdd_index_out_of_domain = index;
 		}
+		index += (var->type? var->type : 1) * (var->dim? var->dim : 1);
+
 	}
 }
 

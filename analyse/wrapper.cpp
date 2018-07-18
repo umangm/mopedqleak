@@ -87,7 +87,9 @@ computed_pds wrap_and_compute(intPds* PDS, bool probReach, analysis_mode mode, c
 	
 	program_variables = new DdNode*[3*gcount+3*lcount];
 
-	bdd_index_out_of_domain = bdd_index_out_of_domain + 3 * lcount;
+	if(bdd_index_out_of_domain >= 0){
+		bdd_index_out_of_domain = bdd_index_out_of_domain + 3 * lcount;
+	}
 	
 	map<wIdent, intModule*> line_module_map = map_lines_to_modules(PDS);
 	
@@ -512,8 +514,6 @@ computed_pds wrap_and_compute(intPds* PDS, bool probReach, analysis_mode mode, c
 		if(mode==PRE) pM = processRules_pre( PDS->mgr, map_states.size()-1, map_line_numbers.size()-1, rules, 3*(gcount+lcount), 0.00001);
 	}
 	
-	
-
 	//Assigning the names to line-numbers
 	char** outNames = new char*[map_line_numbers.size()-1];
 	for(unsigned int i=0; i<map_line_numbers.size()-1; i++){
@@ -539,19 +539,27 @@ computed_pds wrap_and_compute(intPds* PDS, bool probReach, analysis_mode mode, c
 	    Cudd_Ref(outputvars);
 
 	    for(int i=ret_count; i<gcount; i++){
-	    	if(bdd_index_out_of_domain == i) continue;		//This ensures that inputvars and outputvars do not contain the extra out_of_domain variable
+	    	if(bdd_index_out_of_domain == 3*i + 3*lcount) {
+				//This ensures that inputvars and outputvars do not contain the extra out_of_domain variable
+	    		continue;
+	    	}	
 		    inputvars = Cudd_addApply(PDS->mgr, Cudd_addTimes, inputvars, program_variables[i*3]);
 		    Cudd_Ref(inputvars);
 		    outputvars = Cudd_addApply(PDS->mgr, Cudd_addTimes, outputvars, program_variables[i*3+2]);
 		    Cudd_Ref(outputvars);
 	    }
-		
+		printADD (PDS->mgr, inputvars, "inputs", "inputs", 100);
+		printADD (PDS->mgr, outputvars, "outputs", "outputs", 100);
+
+		int num_input_vars = bdd_index_out_of_domain < 0 ? gcount : gcount - 1;
+		int num_output_vars = num_input_vars;
+
 		if(entropy=='m'){
 			#ifdef db
 			cout<<"Calling Minentropy\n"<<endl;
 			#endif
-	
-			double me = minEntropy(PDS->mgr, pM[0][0][res.main_line], inputvars, gcount, outputvars, gcount, PDS->prob_program);
+			
+			double me = minEntropy(PDS->mgr, pM[0][0][res.main_line], inputvars, num_input_vars, outputvars, num_output_vars, PDS->prob_program);
 			cout<<"MinEntropy = "<<me<<endl;
 	    }
 	    else if(entropy=='s'){
@@ -559,7 +567,7 @@ computed_pds wrap_and_compute(intPds* PDS, bool probReach, analysis_mode mode, c
 			cout<<"Calling Shannon-Entropy\n"<<endl;
 			#endif
 	
-			double sh = shannonEntropy(PDS->mgr, pM[0][0][res.main_line], inputvars, gcount, outputvars, gcount, PDS->prob_program);
+			double sh = shannonEntropy(PDS->mgr, pM[0][0][res.main_line], inputvars, num_input_vars, outputvars, num_output_vars, PDS->prob_program);
 			cout<<"Shannon Entropy = "<<sh<<endl;	
 	    }
 	}

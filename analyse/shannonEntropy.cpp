@@ -10,6 +10,8 @@ double shannonEntropy(
 	int prob_program)
 {	
 	if(number_of_input_variables==0 &&  number_of_output_variables==0) return 0;
+
+	printADD(manager, MTBDD, "Umang_test", "MTBDD", 100, NULL);
 	
 	if(bdd_index_out_of_domain < 0){
 		#ifdef ddb
@@ -290,25 +292,21 @@ double shannonEntropy(
 		return (val1+val2);
 	}
 	else {
-	
-		number_of_input_variables --;
-		number_of_output_variables --;
 			
-		DdNode *T0,*T1, *T2, *T3, *T4, *T5, *tmp, *T_term;
+		DdNode *T0,*T1, *T2, *T3, *T4, *tmp;
 		
 		DdNode *add_out_of_domain;
-		Cudd_Ref(add_out_of_domain = Cudd_addIthVar(manager, 3*bdd_index_out_of_domain));
+		Cudd_Ref(add_out_of_domain = Cudd_addIthVar(manager, bdd_index_out_of_domain));
 		DdNode *cmpl_out_of_domain;
 		Cudd_Ref(cmpl_out_of_domain = Cudd_addCmpl(manager, add_out_of_domain));
 		
 		DdNode *add_out_of_domain_prime;
-		Cudd_Ref(add_out_of_domain_prime = Cudd_addIthVar(manager, 3*bdd_index_out_of_domain+2));
+		Cudd_Ref(add_out_of_domain_prime = Cudd_addIthVar(manager, bdd_index_out_of_domain+2));
 		DdNode *cmpl_out_of_domain_prime;
 		Cudd_Ref(cmpl_out_of_domain_prime = Cudd_addCmpl(manager, add_out_of_domain_prime));
 		
-		Cudd_Ref(T0 = Cudd_addApply(manager, Cudd_addTimes, MTBDD, cmpl_out_of_domain));
-		Cudd_Ref(T1 = Cudd_addApply(manager, Cudd_addTimes, T0, add_out_of_domain_prime));
-		
+		Cudd_Ref(T0 = Cudd_addApply(manager, Cudd_addTimes, MTBDD, add_out_of_domain_prime));
+
 		double num_valid_inputs = (double)(exp2(number_of_input_variables)) ;
 		
 		#ifdef ddb
@@ -317,8 +315,8 @@ double shannonEntropy(
 		
 		DdNode* out_of_domain_and_prime;
 		Cudd_Ref(out_of_domain_and_prime = Cudd_addApply(manager, Cudd_addTimes, add_out_of_domain, add_out_of_domain_prime));
-	
-		Cudd_Ref(tmp = Cudd_addOrAbstract(manager, T1, out_of_domain_and_prime));	
+		Cudd_Ref(tmp = Cudd_addOrAbstract(manager, T0, out_of_domain_and_prime));	
+		Cudd_RecursiveDeref(manager, T0);
 		Cudd_Ref(tmp = Cudd_addOrAbstract(manager, tmp, outputs));
 		Cudd_Ref(tmp = Cudd_addExistAbstract(manager, tmp, inputs));
 		
@@ -326,7 +324,7 @@ double shannonEntropy(
 			cout<<"The first computed value is not a constant. Please check the inputs."<<endl;
 			cout<<"Printing tmp...\n";
 			printADD (manager, tmp, "MTBDD_copy-shannonentropy", "tmp", 100);
-			return -1;
+			return -100;
 		}
 	
 		num_valid_inputs -= Cudd_V(tmp);
@@ -335,36 +333,41 @@ double shannonEntropy(
 		cout<<"num_valid_inputs = "<<num_valid_inputs<<endl;
 		#endif
 	
-		Cudd_Ref(T2 = Cudd_addApply(manager, Cudd_addTimes, T0, cmpl_out_of_domain_prime));
-		Cudd_Ref(T3 = Cudd_addOrAbstract(manager, T2, out_of_domain_and_prime));
-		Cudd_Ref(T4 = Cudd_addExistAbstract(manager, T3, inputs));
-		Cudd_Ref(T5 = Cudd_addLogExistAbstract(manager, T4, outputs));
-			
-		if(Cudd_IsNonConstant(T5)==1){
+		// Now computing sum1
+		Cudd_Ref(T1 = Cudd_addApply(manager, Cudd_addTimes, MTBDD, cmpl_out_of_domain_prime));
+		Cudd_Ref(T2 = Cudd_addOrAbstract(manager, T1, out_of_domain_and_prime));
+		Cudd_RecursiveDeref(manager, T1);
+		Cudd_Ref(T3 = Cudd_addExistAbstract(manager, T2, inputs));
+		Cudd_RecursiveDeref(manager, T2);
+		Cudd_Ref(T3 = Cudd_addLogExistAbstract(manager, T3, inputs));	
+		if(Cudd_IsNonConstant(T3)==1){
 			cout<<"The first computed value is not a constant. Please check the inputs."<<endl;
-			cout<<"Printing T5...\n";
-			printADD (manager, T5, "MTBDD_copy-shannonentropy", "T5", 100);
+			cout<<"Printing T3...\n";
+			printADD (manager, T3, "MTBDD_copy-shannonentropy", "T3", 100);
 			return -1;
 		}
-		
-		double sum = Cudd_V(T5);
+		double sum = Cudd_V(T3);
 		#ifdef ddb
 		cout<<"sum = "<<sum<<endl;
 		#endif
+		Cudd_RecursiveDeref(manager, T3);
 		
-		Cudd_Ref(tmp = Cudd_addOrAbstract(manager, T2, out_of_domain_and_prime));
-		Cudd_Ref(tmp = Cudd_addOrAbstract(manager, tmp, outputs));
-		Cudd_Ref(T_term = Cudd_addExistAbstract(manager, tmp, inputs));
-		Cudd_RecursiveDeref(manager, tmp);
+		Cudd_Ref(T1 = Cudd_addOrAbstract(manager, MTBDD, out_of_domain_and_prime));
+		Cudd_Ref(T2 = Cudd_addOrAbstract(manager, tmp, outputs));
+		Cudd_RecursiveDeref(manager, T1);
+		Cudd_Ref(T3 = Cudd_addCmpl(manager, T2));
+		Cudd_RecursiveDeref(manager, T2);
+		Cudd_Ref(T4 = Cudd_addExistAbstract(manager, T3, inputs));
+		Cudd_RecursiveDeref(manager, T3);
 		
-		if(Cudd_IsNonConstant(T_term)==1){
-			cout<<"The first computed value is not a constant. Please check the inputs."<<endl;
-			cout<<"Printing T_term...\n";
-			printADD (manager, T_term, "MTBDD_copy-shannonentropy", "T_term", 100);
-			return -1;
+		if(Cudd_IsNonConstant(T4)==1){
+			cout<<"The computed value is not a constant. Please check the inputs."<<endl;
+			cout<<"Printing T4...\n";
+			printADD (manager, T4, "MTBDD_copy-shannonentropy", "T4", 100);
+			return -100;
 		}
 		
-		double num_non_term_inputs = num_valid_inputs - Cudd_V(T_term);
+		double num_non_term_inputs = Cudd_V(T4);
 		#ifdef ddb
 		cout<<"num_non_term_inputs = "<<num_non_term_inputs<<endl;
 		#endif

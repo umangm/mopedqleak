@@ -30,16 +30,19 @@ bool out_of_domain;
 unsigned int S1, S2, S3,O;
 
 module void main(){
-     O=0;
      if 
-     :: (S1>=10) || (S2>=10) || (S3>=10) -> out_of_domain =true;
-     :: else->O = S1;
-        O = O + S2;
-        O = O + S3;
-        S1 = 0;
-        S2 = 0;
-        S3 = 0;
+     :: (S1>=10) || (S2>=10) || (S3>=10) -> out_of_domain=true;
+     :: else -> out_of_domain = false;
      fi
+
+     O = 0;
+     O = S1;
+     O = O + S2;
+     O = O + S3;
+     S1 = 0;
+     S2 = 0;
+     S3 = 0;
+     
 
 //	O = S1;
 //	O = O + S2;
